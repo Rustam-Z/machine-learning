@@ -1,0 +1,1 @@
+# [AI for everyone](https://www.coursera.org/learn/ai-for-everyone/)
