@@ -1,15 +1,18 @@
 # [Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning](https://www.coursera.org/learn/introduction-tensorflow/home/welcome)
 
 ## Contents:
-- Week 1 - A new programming paradigm
-- Week 2 - Introduction to Computer Vision
-- Week 3 - Convolutional Neural Networks
-- Week 4 - Using real-world images
+- Week 1 - [A new programming paradigm](#A-new-programming-paradigm)
+- Week 2 - [Introduction to Computer Vision](#Introduction-to-Computer-Vision)
+- Week 3 - [Convolutional Neural Networks](#Convolutional-Neural-Networks)
+- Week 4 - [Using real-world images](#Using-Real-world-Images)
  
 > `!pip install tensorflow==2.0.0-alpha0` run it to use TensorFlow 2.x in Google Colab
-> https://drive.google.com/drive/folders/1R4bIjns1qRcTNkltbO9NOi7jgnrM-VLg?usp=sharing The notebooks you can work with
+
+> The notebooks you can work with: https://drive.google.com/drive/folders/1R4bIjns1qRcTNkltbO9NOi7jgnrM-VLg?usp=sharing 
 
 ## A new programming paradigm
+> [Notebook](notebooks/deeplearning.ai-TensorFlow/Course_1_Part_2_Lesson_2_Notebook.ipynb) 
+
 ### A primer in machine learning
 <img src="img/1.png" width=400/>
 
@@ -33,6 +36,8 @@ print(model.predict([10.0])) # You can expect 19 because y = 2x - 1, but it will
 ```
 
 ## Introduction to Computer Vision
+> [Notebook](notebooks/deeplearning.ai-TensorFlow/Course_1_Part_4_Lesson_2_Notebook.ipynb)
+
 > https://github.com/zalandoresearch/fashion-mnist 70K images
 
 ```python
@@ -111,6 +116,7 @@ model.fit(x_train, y_train, epochs=10, callbacks=[callbacks]) # You need to add 
 
 
 ## Convolutional Neural Networks
+> [Notebook](notebooks/deeplearning.ai-TensorFlow/Course_1_Part_6_Lesson_2_Notebook.ipynb)
 
 > https://github.com/Rustam-Z/deep-learning-notes/tree/main/Course%204%20Convolutional%20Neural%20Networks
 
@@ -191,4 +197,68 @@ for x in range(0,4):
   f3 = activation_model.predict(test_images[THIRD_IMAGE].reshape(1, 28, 28, 1))[x]
   axarr[2,x].imshow(f3[0, : , :, CONVOLUTION_NUMBER], cmap='inferno')
   axarr[2,x].grid(False)
+```
+
+## Using Real-world Images    
+> [Nobebook](notebooks/deeplearning.ai-TensorFlow/Course_1_Part_8_Lesson_2_Notebook.ipynb)
+
+```python
+# An ImageGenerator can flow images from a directory and perform operations such as resizing them on the fly
+import tensorflow as tf
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.optimizers import RMSprop
+
+# All images will be rescaled by 1./255
+train_datagen = ImageDataGenerator(rescale=1/255)
+
+# Flow training images in batches of 128 using train_datagen generator
+train_generator = train_datagen.flow_from_directory(
+  '/tmp/horse-or-human/',  # This is the source directory for training images
+  target_size=(300, 300),  # All images will be resized to 150x150
+  batch_size=128,
+  # Since we use binary_crossentropy loss, we need binary labels
+  class_mode='binary')
+
+validation_generator = train_datagen.flow_from_directory(
+  validation_dir,
+  target_size=(300, 300),
+  batch_size=32,
+  class_mode='binary',
+)
+
+model.compile(loss='binary_crossentropy', 
+              optimizer=RMSprop(lr=0.001),
+              metrics=['accuracy'])
+
+history = model.fit_generator(
+  train_generator, # streames images from directory
+  steps_per_epoch=8, # 1024 images overall, so 128*8=1024, 128 is the batch size of train_generator 
+  epochs=15,
+  validation_data=validation_generator,
+  validation_steps=8, # 256 images, so 32*8=256, 32 is the batch size of validation_generator
+  verbose=2 # for info
+)
+```
+```python
+import numpy as np
+from google.colab import files
+from keras.preprocessing import image
+
+uploaded = files.upload()
+
+for fn in uploaded.keys():
+  # Predicting images
+  path = "/content/" + fn
+  img = image.load_img(path, target_size=(300, 300))
+  x = image.img_to_array(img)
+  x = np.expand_dims(x, axis=0)
+
+  images = np.vstack([x])
+  classes = model.predict(images, batch_size=10)
+  print(classes[0])
+
+  if classes[0] > 0.5:
+    print(fn + "is a human")
+  else:
+    print(fn + "is a horse")
 ```
