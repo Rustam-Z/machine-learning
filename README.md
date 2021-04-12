@@ -6,4 +6,5 @@ Hi everyone, I am Rustam, these days I feel like I need to brush up on my knowle
 ## How to study?
 - https://towardsdatascience.com/thinking-of-self-studying-machine-learning-remind-yourself-of-these-6-things-b55a5f2b6c7d
 
-# Will be be updated soon, in progress...
+## Will be be updated soon, in progress...
+Please, consider this repository for contributing too!
