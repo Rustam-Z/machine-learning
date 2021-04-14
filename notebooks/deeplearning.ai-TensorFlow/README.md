@@ -8,4 +8,4 @@
 ### Course 2
 > [** Cat vs Dog, flow_from_directory(), drawings of loss and accuracy, predict on new image](Course_2_Part_2_Lesson_2_Notebook.ipynb)
 
-> [** With augmentation, good code, plots of accuracy and loss](Course_2_Part_4_Lesson_2_Notebook_(Cats_v_Dogs_Augmentation).ipynb)
+> [** With augmentation, good code collected in one cell, plots of accuracy and loss](Course_2_Part_4_Lesson_2_Notebook_(Cats_v_Dogs_Augmentation).ipynb)

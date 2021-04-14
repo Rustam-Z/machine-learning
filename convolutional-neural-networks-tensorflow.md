@@ -79,4 +79,4 @@ history = model.fit_generator(
 - https://stackoverflow.com/questions/51748514/does-imagedatagenerator-add-more-images-to-my-dataset
 
 ## Transfer Learning
-
+> https://www.tensorflow.org/tutorials/images/transfer_learning
