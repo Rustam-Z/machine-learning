@@ -79,4 +79,53 @@ history = model.fit_generator(
 - https://stackoverflow.com/questions/51748514/does-imagedatagenerator-add-more-images-to-my-dataset
 
 ## Transfer Learning
+> `inception`
+
 > https://www.tensorflow.org/tutorials/images/transfer_learning
+
+```python
+import os
+from tensorflow.keras import layers
+from tensorflow.keras import Model
+from tensorflow.keras.applications.inception_v3 import InceptionV3
+from tensorflow.keras.optimizers import RMSprop
+
+# Donwload InceptionV3 weights
+!wget --no-check-certificate \
+    https://storage.googleapis.com/mledu-datasets/inception_v3_weights_tf_dim_ordering_tf_kernels_notop.h5 \
+    -O /tmp/inception_v3_weights_tf_dim_ordering_tf_kernels_notop.h5
+
+local_weights_file = '/tmp/inception_v3_weights_tf_dim_ordering_tf_kernels_notop.h5'
+pre_trained_model = Inceptionv3(input_shape=(150, 150, 3),
+                                include_top=False, # Do not include top FC (fully connected) layer
+                                weights=None)
+pre_trained_model.load_weights(local_weights_file) # Use own weights
+
+# Do not retrain layers, i.e freeze them
+for layer in pre_trained_model.layers:
+  layer.trainable = False
+
+# pre_trained_model.summary()
+
+# Grab the mixed7 layer from inception, and take its output 
+last_layer = pre_trained_model.get_layer('mixed7')
+print('last layer output shape: ', last_layer.output_shape)
+last_output = last_layer.output
+
+# Now, you'll need to add your own DNN at the bottom of these, which you can retrain to your data
+x = layers.Flatten()(last_output)
+x = layers.Dense(1024, activation='relu')(x)
+x = layers.Dropout(0.2)(x) # Drop out 20% of neurons
+x = layers.Dense(1, activation='sigmoid')(x)
+
+# Create model using 'Model' abstract class
+model = Model(pre_trained_model.input, x)
+model.compile(optimizer=RMSprop(lr=.0001),
+              loss='binary_crossentropy',
+              metrics=['accuracy'])
+
+train_datagen = ImageDataGenerator(...)
+train_generator = train_datagen.flow_from_directory(...)
+history = model.fit_generator(...)
+```
+> The idea behind **Dropouts** is that they **remove a random number of neurons** in your neural network. This works very well for two reasons: The first is that neighboring neurons often end up with similar weights, which can lead to overfitting, so dropping some out at random can remove this. The second is that often a neuron can over-weigh the input from a neuron in the previous layer, and can over specialize as a result. Thus, dropping out can break the neural network out of this potential bad habit!

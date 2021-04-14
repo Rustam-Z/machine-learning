@@ -14,3 +14,7 @@
 
 ### YouTube
 - DeepLizard https://www.youtube.com/c/deeplizard/playlists
+
+### QA Section
+- Validation accuracy is higher than training accuracy.
+    - https://www.quora.com/Can-validation-accuracy-be-higher-than-training-accuracy
