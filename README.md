@@ -5,6 +5,23 @@ Hi everyone, I am Rustam, these days I feel like I need to brush up on my knowle
 
 ## How to study?
 - https://towardsdatascience.com/thinking-of-self-studying-machine-learning-remind-yourself-of-these-6-things-b55a5f2b6c7d
+- https://www.tensorflow.org/resources/learn-ml/basics-of-machine-learning
+
+## Draft Roadmap
+- Basics of machine learning
+    - Books and notebooks
+    - Deep learning with Python book
+    - AI and Machine Learning for coders book
+- Deep learning
+    - Coursera TensorFlow Developer, books, and notebooks
+    - Hands-on ML book
+    - Deep learning MIT press book
+- Data science tools
+    - Numpy
+    - Pandas
+    - Matplotlib
+    - Python for Data Analysis book
+    - Python Data Science Handbook book
 
 ## Will be be updated soon, in progress...
 Please, consider this repository for contributing too!
