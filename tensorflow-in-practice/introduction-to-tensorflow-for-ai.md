@@ -11,7 +11,7 @@
 > The notebooks you can work with: https://drive.google.com/drive/folders/1R4bIjns1qRcTNkltbO9NOi7jgnrM-VLg?usp=sharing 
 
 ## A new programming paradigm
-> [Notebook](notebooks/deeplearning.ai-TensorFlow/Course_1_Part_2_Lesson_2_Notebook.ipynb) 
+> [Notebook](notebooks/Course_1_Part_2_Lesson_2_Notebook.ipynb) 
 
 ### A primer in machine learning
 <img src="img/1.png" width=400/>
@@ -36,7 +36,7 @@ print(model.predict([10.0])) # You can expect 19 because y = 2x - 1, but it will
 ```
 
 ## Introduction to Computer Vision
-> [Notebook](notebooks/deeplearning.ai-TensorFlow/Course_1_Part_4_Lesson_2_Notebook.ipynb)
+> [Notebook](notebooks/Course_1_Part_4_Lesson_2_Notebook.ipynb)
 
 > https://github.com/zalandoresearch/fashion-mnist 70K images
 
@@ -74,7 +74,6 @@ classifications = model.predict(test_images) # Predict for new values
 
 print(">> Predicted label:", classifications[0])
 print(">> Actual label:", test_labels[0])
-
 
 ```
 - Notes:
@@ -114,9 +113,8 @@ model.compile(optimizer=tf.optimizers.Adam(),
 model.fit(x_train, y_train, epochs=10, callbacks=[callbacks]) # You need to add callbacks argument
 ```
 
-
 ## Convolutional Neural Networks
-> [Notebook](notebooks/deeplearning.ai-TensorFlow/Course_1_Part_6_Lesson_2_Notebook.ipynb)
+> [Notebook](notebooks/Course_1_Part_6_Lesson_2_Notebook.ipynb)
 
 > https://github.com/Rustam-Z/deep-learning-notes/tree/main/Course%204%20Convolutional%20Neural%20Networks
 
@@ -200,7 +198,7 @@ for x in range(0,4):
 ```
 
 ## Using Real-world Images    
-> [Nobebook](notebooks/deeplearning.ai-TensorFlow/Course_1_Part_8_Lesson_2_Notebook.ipynb)
+> [Nobebook](notebooks/Course_1_Part_8_Lesson_2_Notebook.ipynb)
 
 ```python
 # An ImageGenerator can flow images from a directory and perform operations such as resizing them on the fly

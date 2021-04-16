@@ -3,10 +3,16 @@
     - How to work with real-world images in different shapes and sizes.
     - Visualize the journey of an image through convolutions to understand how a computer “sees” information
     - Plot loss and accuracy, and explore strategies to prevent overfitting, including augmentation and dropout.
-    - Finally, Course 2 will introduce you to transfer learning and how learned features can be extracted from models. 
+    - Finally, Course 2 will introduce you to transfer learning and how learned features can be extracted from models.
+
+## Contents:
+- Week 1 - [Exploring a Larger Dataset](#Exploring-a-Larger-Dataset)
+- Week 2 - [Augmentation](#Augmentation)
+- Week 3 - [Transfer Learning](#Transfer-Learning)
+- Week 4 - [Multiclass Classifications](#Multiclass-Classifications) 
 
 ## Exploring a Larger Dataset
-> [Notebook](notebooks/deeplearning.ai-TensorFlow/Course_2_Part_2_Lesson_2_Notebook.ipynb)
+> [Notebook](notebooks/Course_2_Part_2_Lesson_2_Notebook.ipynb)
 
 > https://www.kaggle.com/c/dogs-vs-cats 25K pictures of cats and gogs
 
@@ -39,7 +45,7 @@ train_generator = train_datagen.flow_from_directory(train_dir,
 ```
 
 ## Augmentation
-> [Notebook](notebooks/deeplearning.ai-TensorFlow/Course_2_Part_4_Lesson_2_Notebook_(Cats_v_Dogs_Augmentation).ipynb)
+> [Notebook](notebooks/Course_2_Part_4_Lesson_2_Notebook_(Cats_v_Dogs_Augmentation).ipynb)
 
 > `image-augmentation` • `data-augmentation` • `ImageDataGenerator`
 
@@ -129,3 +135,13 @@ train_generator = train_datagen.flow_from_directory(...)
 history = model.fit_generator(...)
 ```
 > The idea behind **Dropouts** is that they **remove a random number of neurons** in your neural network. This works very well for two reasons: The first is that neighboring neurons often end up with similar weights, which can lead to overfitting, so dropping some out at random can remove this. The second is that often a neuron can over-weigh the input from a neuron in the previous layer, and can over specialize as a result. Thus, dropping out can break the neural network out of this potential bad habit!
+
+## Multiclass Classifications
+- Computer generated images (CGI) will help you to create a dataset. Imagine you are creating a project for detecting rock, paper, scissors (💎, 📄, ✂️) during the game. So, you need lots of images of different races for both male and female, big and little hands. 
+- http://www.laurencemoroney.com/rock-paper-scissors-dataset/
+<!-- 
+- https://storage.googleapis.com/laurencemoroney-blog.appspot.com/rps.zip
+- https://storage.googleapis.com/laurencemoroney-blog.appspot.com/rps-test-set.zip
+- https://storage.googleapis.com/laurencemoroney-blog.appspot.com/rps-validation.zip -->
+- Change to `class_mode='categorical'` in flow_from_firectory(), and output Dense layer `activation='softmax'`, and loss function in model.compile `loss='categorical_crossentropy'`
+- flow_from_directory() uses the alphabetical order. For example, is we test for rock the output should be [1, 0, 0] because of [rock, paper, scissors].
