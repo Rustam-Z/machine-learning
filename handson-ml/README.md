@@ -13,4 +13,3 @@
     - Reducing the dimensionality of the training data to fight the curse of dimension‐ ality.
     - Other unsupervised learning techniques, including clustering, density estimation and anomaly detection.
     - The most common learning algorithms: Linear and Polynomial Regression, Logistic Regression, k-Nearest Neighbors, Support Vector Machines, Decision Trees, Random Forests, and Ensemble methods.
-- 

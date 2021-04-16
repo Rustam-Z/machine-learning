@@ -3,6 +3,11 @@ Hi everyone, I am Rustam, these days I feel like I need to brush up on my knowle
 
 > The goal is to become a machine learning problem solver, learn how to apply machine learning solutions, optimize for your own cases and environment, and solve real life problems.
 
+<figure>
+  <img src="img/learning-is.jpeg" alt=">>> (1+1/100)**365 37.78343433288728" style="width:100%">
+  <figcaption style="text-align:center;"><b>1% better every day = 3700% better at the end of the year.</b></figcaption>
+</figure>
+
 ## How to study?
 - https://towardsdatascience.com/thinking-of-self-studying-machine-learning-remind-yourself-of-these-6-things-b55a5f2b6c7d
 - https://www.tensorflow.org/resources/learn-ml/basics-of-machine-learning
