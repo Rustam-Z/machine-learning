@@ -5,6 +5,9 @@
 
 ### Courses
 - https://openlearninglibrary.mit.edu/courses/course-v1:MITx+6.036+1T2019/about
+- Fast AI DL: https://www.fast.ai
+- Cpursera Data Science: https://www.coursera.org/specializations/data-science-python?ranMID=40328&ranEAID=EBOQAYvGY4A&ranSiteID=EBOQAYvGY4A-xBZ6HIoQD.6tLROsD7db4g&siteID=EBOQAYvGY4A-xBZ6HIoQD.6tLROsD7db4g&utm_content=2&utm_medium=partners&utm_source=linkshare&utm_campaign=EBOQAYvGY4A
+- Fast AI ML course: https://course18.fast.ai/ml
 
 ### Books
 - Data Science books: https://proglib.io/w/0232ad78
