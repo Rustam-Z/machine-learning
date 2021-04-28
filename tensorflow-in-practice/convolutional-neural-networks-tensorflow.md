@@ -145,3 +145,7 @@ history = model.fit_generator(...)
 - https://storage.googleapis.com/laurencemoroney-blog.appspot.com/rps-validation.zip -->
 - Change to `class_mode='categorical'` in flow_from_firectory(), and output Dense layer `activation='softmax'`, and loss function in model.compile `loss='categorical_crossentropy'`
 - flow_from_directory() uses the alphabetical order. For example, is we test for rock the output should be [1, 0, 0] because of [rock, paper, scissors].
+
+## Notes
+- Can you use Image augmentation with Transfer Learning? 
+  > Yes. It's pre-trained layers that are frozen. So you can augment your images as you train the bottom layers of the DNN with them
