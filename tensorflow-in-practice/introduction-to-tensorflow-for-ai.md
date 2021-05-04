@@ -125,7 +125,7 @@ model.fit(x_train, y_train, epochs=10, callbacks=[callbacks]) # You need to add 
   - Max pooling, average pooling
 - Fully connected (FC)
 
-- Formula to calculate the shape of convolution: (n + 2p - f) / s + 1
+- Formula to calculate the shape of convolution: [(n + 2p - f) / s] + 1
 - Formula to calculate the number of parameters in convolution: (f * f * PREVIOUS_ACTIVATION_SHAPE + 1) * ACTIVATION_SHAPE
 
 - https://lodev.org/cgtutor/filtering.html • https://colab.research.google.com/drive/1EiNdAW4gtrObrBSAuuxIt_AqO_Eft491#scrollTo=kDHjf-ehaBqm
