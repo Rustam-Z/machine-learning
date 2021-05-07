@@ -10,23 +10,27 @@ Hi everyone, I am Rustam, these days I feel like I need to brush up on my knowle
 
 ## How to study?
 - https://towardsdatascience.com/thinking-of-self-studying-machine-learning-remind-yourself-of-these-6-things-b55a5f2b6c7d
-- https://www.tensorflow.org/resources/learn-ml/basics-of-machine-learning
+- TensorFlow team Machine Learning roadmap, https://www.tensorflow.org/resources/learn-ml/basics-of-machine-learning
+- Target learning Data Science using Krish Naik playklists, https://www.youtube.com/watch?v=mO8xck5cuTA
 
 ## Draft Roadmap
-- Basics of machine learning
-    - Books and notebooks
-    - Deep learning with Python book
-    - AI and Machine Learning for coders book
-- Deep learning
-    - Coursera TensorFlow Developer, books, and notebooks
-    - Hands-on ML book
-    - Deep learning MIT press book
-- Data science tools
-    - Numpy
-    - Pandas
-    - Matplotlib
-    - Python for Data Analysis book
-    - Python Data Science Handbook book
+- Machine Learning
+    - "Deep learning with Python", book, only first part
+    - "AI and Machine Learning for Coders", book
+    - Machine Learning Course, Andrew Ng, coursera.org
+- Deep Learning
+    - TensorFlow Developer Specialization, deeplearning.ai, coursera.org
+    - "Deep learning with Python", book, finish it
+    - "Hands-on Machine Learning with Scikit-Learn, Keras & TensorFlow", book
+    - **Advanced**
+    - Deep learning MIT press, book
+    - Deep Learning Specialization, Andrew Ng, coursera.org
+    - TensorFlow Advanced Techniques, coursera.org
+- Data Science
+    - "Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython", book
+    - "Python Data Science Handbook", book
+    - Big Data
+    - Numpy, Pandas, Matplotlib
 
 ## Will be be updated soon, in progress...
-Please, consider this repository for contributing too!
+Please, consider this repository for contributing too! 
