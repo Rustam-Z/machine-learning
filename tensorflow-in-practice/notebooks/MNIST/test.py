@@ -4,9 +4,9 @@ from PIL import Image
 import cv2
 import matplotlib.pyplot as plt
 
-model = tf.keras.models.load_model('/Users/rustamz/machine-learning/machine-learning-area/tensorflow-in-practice/notebooks/Exercises/my_model.h5')
+model = tf.keras.models.load_model('tensorflow-in-practice/notebooks/MNIST/my_model.h5')
 
-image = cv2.imread('/Users/rustamz/machine-learning/machine-learning-area/tensorflow-in-practice/img/0.jpg')
+image = cv2.imread('tensorflow-in-practice/img/0.jpg')
 image = cv2.resize(image,(28,28))
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 data = np.vstack([gray])
