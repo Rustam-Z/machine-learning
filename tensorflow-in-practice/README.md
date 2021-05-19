@@ -14,4 +14,4 @@ Course quizzes: https://github.com/SHANK885/Tensorflow-in-Practice-Specializatio
 ## What's next?
 - Projects, projects, projects
 - Start reading **Hands-on Machine learning** book
-- **TensorFlow Advanced Teshniques**: https://www.coursera.org/specializations/tensorflow-advanced-techniques
+- **TensorFlow Advanced Techniques**: https://www.coursera.org/specializations/tensorflow-advanced-techniques

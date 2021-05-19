@@ -26,7 +26,7 @@ I have a telegram channel, where I post all interesting stuff about AI. (https:/
     - Machine Learning Course, Andrew Ng, coursera.org
 - Deep Learning
     - TensorFlow Developer Specialization, deeplearning.ai, coursera.org
-    - "Deep learning with Python", book, finish it
+    - "Deep learning with Python",    book, finish it
     - "Hands-on Machine Learning with Scikit-Learn, Keras & TensorFlow", book
     - **Advanced**
     - Deep learning MIT press, book

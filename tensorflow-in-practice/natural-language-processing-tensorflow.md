@@ -34,6 +34,26 @@
 
 ## Sequence models
 - RNN, LSTM https://www.youtube.com/watch?v=WCUNPb-5EYI
-`
+- GRU - Gated recurrent union `tf.keras.layers.Bidirectional(tf.keras.layers.GRU(64)`
+- LSTM
+```python
+model = tf.keras.Sequential([
+    tf.keras.layers.Embedding(tokenizer.vocab_size, 64),
+    tf.keras.layers.Bidirectional(tf.keras.layers.LSTM(64), return_sequences=True), # You need to define `return_sequences=True` when stacking two LSTMs 
+    tf.keras.layers.Bidirectional(tf.keras.layers.LSTM(64)),
+    tf.keras.layers.Dense(64, activation='relu'),
+    tf.keras.layers.Dense(1, activation='sigmoid'),
+])
+```
+- Using a convolutional network 1D
+```python
+model = tf.keras.Sequential([
+    tf.keras.layers.Embedding(tokenizer.vocab_size, 64),
+    tf.keras.layers.Conv1D(128, 5, activation='relu'),
+    tf.keras.layers.GlobalAveragePooling1D(),
+    tf.keras.layers.Dense(64, activation='relu'),
+    tf.keras.layers.Dense(1, activation='sigmoid')
+])
+```
 
 ## Sequence models and literature
