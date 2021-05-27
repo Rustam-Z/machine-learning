@@ -5,13 +5,17 @@ Hi everyone, I am Rustam, these days I feel like I need to brush up on my knowle
 
 I have a telegram channel, where I post all interesting stuff about AI. (https://t.me/rz_zokirov_ml)
 
+## Why Should You Use Machine Learning?
+I found two good answers on why you should care. Firstly, Machine Learning (ML) is making computers do things that we’ve never made computers do before. If you want to do something new, not just new to you, but to the world, you can do it with ML.
+
+Secondly, if you don’t influence the world, the world will influence you.
+
 ## 1% better every day = 3700% better at the end of the year
-<figure>
-  <img src="img/learning-is.jpeg" alt=">>> (1+1/100)**365 37.78343433288728" style="width:100%">
-</figure>
+<img src="img/learning-is.jpeg" alt=">>> (1+1/100)**365 37.78343433288728" style="width: 100%">
 
 ## How to study?
 - https://towardsdatascience.com/thinking-of-self-studying-machine-learning-remind-yourself-of-these-6-things-b55a5f2b6c7d
+- https://elitedatascience.com/learn-machine-learning
 - TensorFlow team Machine Learning roadmap, https://www.tensorflow.org/resources/learn-ml/basics-of-machine-learning
 - Target learning Data Science using Krish Naik playklists, https://www.youtube.com/watch?v=mO8xck5cuTA
 
