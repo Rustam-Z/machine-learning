@@ -5,12 +5,12 @@ Hi everyone, I am Rustam, these days I feel like I need to brush up on my knowle
 
 I have a telegram channel, where I post all interesting stuff about AI. (https://t.me/rz_zokirov_ml)
 
-## Why Should You Use Machine Learning?
+## Why should you learn Machine Learning?
 I found two good answers on why you should care. Firstly, Machine Learning (ML) is making computers do things that we’ve never made computers do before. If you want to do something new, not just new to you, but to the world, you can do it with ML.
 
 Secondly, if you don’t influence the world, the world will influence you.
 
-## 1% better every day = 3700% better at the end of the year
+### 1% better every day = 3700% better at the end of the year
 <img src="img/learning-is.jpeg" alt=">>> (1+1/100)**365 37.78343433288728" style="width: 100%">
 
 ## How to study?
@@ -20,28 +20,29 @@ Secondly, if you don’t influence the world, the world will influence you.
 - Target learning Data Science using Krish Naik playklists, https://www.youtube.com/watch?v=mO8xck5cuTA
 
 ## Draft Roadmap
-- Math (Calculus, Linear Algebra, Propability & Statistics) 
-  - Calculus, Don't Memorize, https://www.youtube.com/playlist?list=PLmdFyQYShrjd4Qn42rcBeFvF6Qs-b6e-L
-  - Caclulus, 3Blue1Brown, https://youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr
-  - Linear Algebra, 3Blue1Brown, https://youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab
-- Machine Learning
+- **Math (Calculus, Linear Algebra, Propability & Statistics)** 
+  - [Calculus](https://www.youtube.com/playlist?list=PLmdFyQYShrjd4Qn42rcBeFvF6Qs-b6e-L), *Don't Memorize*
+  - [Caclulus](https://youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr), *3Blue1Brown*
+  - [Linear Algebra](https://youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab), *3Blue1Brown*
+- **Python**  
+    - [My Python learning roadmap](https://github.com/Rustam-Z/learning-area#1-start-learning-python)
+    - Numpy, Pandas, Matplotlib
+- **Machine Learning**
     - "Deep learning with Python", book, only first part
     - "AI and Machine Learning for Coders", book
     - Machine Learning Course, Andrew Ng, coursera.org
-- Deep Learning
+- **Deep Learning**
     - TensorFlow Developer Specialization, deeplearning.ai, coursera.org
-    - "Deep learning with Python",    book, finish it
+    - "Deep learning with Python", book, second part
     - "Hands-on Machine Learning with Scikit-Learn, Keras & TensorFlow", book
     - **Advanced**
     - Deep learning MIT press, book
     - Deep Learning Specialization, Andrew Ng, coursera.org
     - TensorFlow Advanced Techniques, coursera.org
-- Data Science
+- **Data Science**
     - "Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython", book
     - "Python Data Science Handbook", book
     - Big Data
-    - Numpy, Pandas, Matplotlib
 
-
-## Will be be updated soon, in progress...
+## Small steps everyday! 
 Please, consider this repository for contributing too! 
