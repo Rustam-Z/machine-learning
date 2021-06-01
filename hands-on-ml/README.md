@@ -1,6 +1,6 @@
 # Hands-on Machine Learning with Scikit-Learn, Keras, and TensorFlow
 
-Rustam-Z🚀, 29 May 2021
+Rustam-Z🚀 • 29 May 2021
 
 Hello, I am Rustam. Here, you can find my notes on `Hands-on Machine Learning` book. Use `TIP!` in searching bar to find tips while developing ML system. 
 
@@ -23,6 +23,8 @@ Hello, I am Rustam. Here, you can find my notes on `Hands-on Machine Learning` b
     - Main Challenges of ML
     - Testing and Validating
 - [CHAPTER 2: End-to-End Machine Learning Project](CHAPTER-2:-End-to-End-Machine-Learning-Project)
+    - Look at the Big Picture
+    - Get the data
 
 ## CHAPTER 1: The Machine Learning Landscape
 ### What is Machine Learning?
@@ -45,7 +47,7 @@ approach: the best Machine Learning techniques can find a solution. (speech reco
 - Whether they work by simply comparing new data points to known data points, or instead detect patterns in the training data and build a predictive model, much like scientists do `instance-based vs model-based learning`
 
 - **Supervised learning** - training data with labels (expected outputs). 
-    - Tasks: classification, regression. 
+    - Tasks: classification, regression (univariate / multivariate). 
     - Class / sample / label / feature (predictors: age, brand, ...) / attribute
     - **Algorithms**
         - k-Nearest Neighbors
@@ -129,3 +131,28 @@ approach: the best Machine Learning techniques can find a solution. (speech reco
 
 
 ## CHAPTER 2: End-to-End Machine Learning Project
+1. Frame the problem and look at the big picture.
+2. Get the data.
+3. Discover and visualize the data to gain insights.
+4. Prepare the data for Machine Learning algorithms.
+5. Explore many different models and shortlist the best ones.
+6. Fine-tune your models and combine them into a great solution.
+7. Present your solution.
+8. Launch, monitor, and maintain your system.
+
+### Look at the Big Picture
+- **Frame the Problem**
+    - **Question 1:** What exactly is the business objective, maybe no need to ML? How does the company expect to use and benefit from this model?
+    - You must understand the problem, because it will help to you select the algorithm, and performance measure. You can build the pipeline.
+    - **Question 2:** Is there any solutions?
+    - Now design ML system. Is it supervised, unsupervised, what kind of task it is (classification, regression)? Whether apply batch or online learning?
+- **Select a Performance Measure** - loss function, for regression task Root Mean Squared Error is used, it gives the idea of how much error the system typically makes in its predictions, with a higher weight for large errors.
+    - **RMSE** - Root Mean Squared Error, Euclidean norm or L2 norm. The higher the norm index, the more it focuses on large values and neglects small ones. But when outliers are exponentially rare RMSE is better.
+    - **MSE** - Mean Squared Error, Manhattan norm or L1 norm, **not so sensitive to outliers as RMSE**
+- **Check the Assumptions** - understand input & output of model, problem & solution
+
+### Get the data
+- **Download the Data**
+- **Take a Quick Look at the Data Structure**
+    - Analyse outputs of `df.info(), df.describe(), df.hist()`
+- **Create a Test Set** - put it aside, and never look at it.
