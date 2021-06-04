@@ -13,6 +13,7 @@
 
 ## Math Operations with NumPy
 ```python 
+# We can use Python Lists to create NumPy arrays
 x = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 
 # Size, dimentionality, shape of array

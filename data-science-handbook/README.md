@@ -2,19 +2,22 @@
 
 Rustam-Z🚀 • 1 June 2021
 
-My notes on **NumPy**, **Pandas**, **Matplotlib**, and **Scikit-Learn** 
+My notes on **NumPy: ndarray**, **Pandas: DataFrame**, **Matplotlib**, and **Scikit-Learn** 
 
 ## Contents
-1. IPython: Beyond Normal Python
-2. Introduction to NumPy: Math operations with Python
+1. IPython: Beyond Normal Python - *All features of Jupyter Notebook*
+2. Introduction to NumPy: Math operations with NumPy
     - Creating Arrays
     - The Basics of NumPy Arrays
     - Computation on NumPy Arrays
+    - Fancy indexing
+    - Structured Arrays
 3. Data Manipulation with Pandas
 4. Visualization with Matplotlib
 5. Machine Learning
 
-## Introduction to NumPy
+## CHAPTER 2: Introduction to NumPy
+- `axis=0 is column`, `axis=1 is row`
 
 ### Creating Arrays
 ```python
@@ -44,6 +47,9 @@ np.zeros(10, dtype=np.int16)
     - Changing the shape of a given array
 - *Array Concatenation and Splitting*
     - Combining multiple arrays into one, and splitting one array into many
+
+- indices `(e.g., arr[0])`, slices `(e.g., arr[:5])`, and boolean masks `(e.g., arr[arr > 0])`
+- [np.newaxis()](https://stackoverflow.com/questions/46334014/np-reshapex-1-1-vs-x-np-newaxis)
 
 ```python
 """ Attributes of arrays """
@@ -113,6 +119,198 @@ print(x1, x2, x3) # [1 2 3] [99 99] [3 2 1] # N --> N+1 subarray
         np.power(3, x)   3^x
         np.expm1(x)      exp(x) - 1
         np.log1p(x)      log(1 + x)
-
-        
 ```
+```python
+x = np.arange(1, 6)
+np.add.reduce(x) # 15, sum of all elements
+np.multiply.reduce(x) # 120, mulitplication of all elements
+
+np.add.accumulate(x) # array([ 1, 3, 6, 10, 15]), intermediate result
+np.multiply.accumulate(x) # array([ 1, 2, 6, 24, 120])
+
+np.multiply.outer(x, x) # N+1 dimension multiplication
+
+np.sum          Compute sum of elements
+np.prod         Compute product of elements
+np.mean         Compute median of elements
+np.std          Compute standard deviation
+np.var          Compute variance
+np.min          Find minimum value
+np.max          Find maximum value
+np.argmin       Find index of minimum value
+np.argmax       Find index of maximum value
+np.median       Compute median of elements
+np.percentile   Compute rank-based statistics of elements   np.percentile(arr, 25))
+np.any          Evaluate whether any elements are true
+np.all          Evaluate whether all elements are true
+```
+```python
+"""Comparison Operators"""
+==      np.equal
+!=      np.not_equal
+<       np.less             np.less(x, 3) is x < 3
+<=      np.less_equal
+>       np.greater
+>=      np.greater_equal
+
+# Example
+x = np.array([1, 2, 3, 4, 5])
+x < 3  # array([ True, True, False, False, False], dtype=bool)
+(2 * x) == (x ** 2)  # array([False, True, False, False, False], dtype=bool)
+```
+```python
+"""Working with Boolean Arrays"""
+print(x)  # [[5 0 3 3][7 9 3 5][2 4 7 6]]
+
+# Counting entries
+np.count_nonzero(x < 6) # 8, how many values less than 6?
+np.sum(x < 6) # 8, counts elements less than 6
+np.sum(x < 6, axis=1) # how many values less than 6 in each row?
+np.any(x > 8) # are there any values greater than 8?
+np.all(x < 10) # are all values less than 10?
+np.all(x < 8, axis=1) # are all values in each row less than 8?
+
+# Boolean operators
+&   np.bitwise_and
+|   np.bitwise_or
+^   np.bitwise_xor
+~   np.bitwise_not
+np.sum((inches > 0.5) & (inches < 1)) # that's counts the number of elements
+np.sum(~( (inches <= 0.5) | (inches >= 1) ))
+
+x[x < 5] # [0 3 3 3 2 4]
+
+# Fancy indexing 
+x = rand.randint(100, size=10)
+y = np.array([1, 2])
+x[y] # array([92, 14])
+```
+- `np.sort(x)`, `np.argsort(x)` , `np.sort(X, axis=0)` = sort each column of X
+- Partial Sorts: `np.partition(x, 3)` - returns 2 smallest elements to the left
+
+```python
+"""NumPy’s Structured Arrays: Compound data types"""
+name = ['Alice', 'Bob', 'Cathy', 'Doug']
+age = [25, 45, 37, 19]
+weight = [55.0, 85.5, 68.0, 61.5]
+
+# We need to combine them
+x = np.zeros(4, dtype=int)
+data = np.zeros(4, dtype={'names':('name', 'age', 'weight'), 'formats':('U10', 'i4', 'f8')})
+data['name'] = name
+data['age'] = age
+data['weight'] = weight
+
+print(data) # [('Alice', 25, 55.0) ('Bob', 45, 85.5) ('Cathy', 37, 68.0) ('Doug', 19, 61.5)]
+
+# Get all names
+data['name'] # array(['Alice', 'Bob', 'Cathy', 'Doug'], dtype='<U10')
+
+# Get first row of data
+data[0] # ('Alice', 25, 55.0)
+
+# Get the name from the last row
+data[-1]['name'] # 'Doug'
+
+# Get names where age is under 30
+data[data['age'] < 30]['name'] #  array(['Alice', 'Doug'], dtype='<U10')
+
+"""Creating Structured Arrays"""
+tp = np.dtype({'names':('name', 'age', 'weight'), 'formats':('U10', 'i4', 'f8')})
+tp =  np.dtype([('name', 'S10'), ('age', 'i4'), ('weight', 'f8')])
+tp =  np.dtype('S10,i4,f8')
+
+# Then assign in dtype argument:
+X = np.zeros(1, dtype=tp)
+
+"""More advanced compound arrays"""
+tp = np.dtype([('id', 'i8'), ('mat', 'f8', (3, 3))])
+X = np.zeros(1, dtype=tp)
+print(X[0])
+print(X['mat'][0])
+```
+
+## CHAPTER 3: Data Manipulation with Pandas
+- Consists of **Series** and **DataFrame** objects, also **Index**
+- `TIP!` “Explicit is better than implicit"
+
+```python
+"""The Pandas Series Object"""
+# pd.Series(data, index=index)
+data = pd.Series([0.25, 0.5, 0.75, 1.0]) # Series = 1D array
+data.index
+data.values
+# Difference: Numpy = implicitly defined index, but Pandas Series = explicitly defined index (obvious, can be changed)
+data = pd.Series([0.25, 0.5, 0.75, 1.0], index=[2, 'b', 'c', 'd'])
+```
+```python
+"""The Pandas DataFrame Object"""
+# It consists of Series
+states = pd.DataFrame({'population': population, 'area': area})
+# pd.DataFrame([{'a': 1, 'b': 2}, {'b': 3, 'c': 4}]) # From a list of dicts
+# A = np.zeros(3, dtype=[('A', 'i8'), ('B', 'f8')]) # From a NumPy structured array
+```
+- Pages 102-105 **DataFrame** object creating variations
+```python
+"""Index object"""
+# The index object is immutablle so that it cannot be changed after diclaration
+ind = pd.Index([2, 3, 5, 7, 11])
+ind[1] = 0 # ERROR
+
+indA = pd.Index([1, 3, 5, 7, 9])
+indB = pd.Index([2, 3, 5, 7, 11])
+indA & indB # intersection => Int64Index([3, 5, 7], dtype='int64')
+indA | indB # union => Int64Index([1, 2, 3, 5, 7, 9, 11], dtype='int64')
+indA ^ indB # symmetric difference => Int64Index([1, 2, 9, 11], dtype='int64')
+```
+```python
+"""Data Selection in Series"""
+data = pd.Series([0.25, 0.5, 0.75, 1.0], index=['a', 'b', 'c', 'd'])
+
+data['b'] # 0.5
+'a' in data # True
+data.keys()
+data.items() # key: value
+data['e'] = 1.25 # We can add new item
+
+# slicing explicit, 'c' will be included 
+data['a':'c'] 
+
+# slicing implicit
+data[0:2] 
+
+# masking
+data[(data > 0.3) & (data < 0.8)] 
+
+# fancy indexing
+data[['a', 'e']]
+
+"""Indexers: loc, iloc, and ix
+loc = allows indexing and slicing that always references the explicit index (own indexing)
+iloc = allows indexing and slicing that always references the implicit Python-style index (from 0)
+
+`TIP!` “Explicit is better than implicit"
+"""
+```
+```python
+"""Data Selection in DataFrame"""
+# DataFrame as a dictionary
+data = pd.DataFrame({'area':area, 'pop':pop})
+data['area']
+data.area # if name == str method then not working
+# Add new column
+data['density'] = data['pop'] / data['area']
+# Access samples
+data.loc['Texas']
+
+# DataFrame as two-dimensional array
+data.values 
+data.T # Transpose
+data.iloc[:3, :2] # Chooses both row and column respectively
+data.loc[:'New York', :'pop'] # same as previous
+data.loc[data.density > 100, ['pop', 'density']] # fancy indexing
+# Change like this
+data.iloc[0, 2] = 90
+data[data.density > 100]
+````
+- Until page 114
