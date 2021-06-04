@@ -26,7 +26,8 @@ Secondly, if you don’t influence the world, the world will influence you.
   - [Linear Algebra](https://youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab), *3Blue1Brown*
 - **Python**  
     - [My Python learning roadmap](https://github.com/Rustam-Z/learning-area#1-start-learning-python)
-    - Numpy, Pandas, Matplotlib - "Python Data Science Handbook" (chapters 2, 3, 4)
+    - [NumPy](https://www.w3schools.com/python/numpy/default.asp), [Pandas](https://www.w3schools.com/python/pandas/default.asp), [Matplotlib](https://www.w3schools.com/python/matplotlib_intro.asp) 
+    - "Python Data Science Handbook" (chapters 2, 3, 4)
 - **Machine Learning**
     - "Deep learning with Python", book, only first part
     - "AI and Machine Learning for Coders", book
