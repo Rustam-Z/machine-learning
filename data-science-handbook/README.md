@@ -312,5 +312,12 @@ data.loc[data.density > 100, ['pop', 'density']] # fancy indexing
 # Change like this
 data.iloc[0, 2] = 90
 data[data.density > 100]
-````
+```
 - Until page 114
+- We can perform NumPy operations over Pandas Series and Dataframe (adding, division)
+```py
+A = pd.Series([2, 4, 6], index=[0, 1, 2])
+B = pd.Series([1, 3, 5], index=[1, 2, 3])
+print(A + B)
+print(A.add(B, fill_value=0)) # the set which doesn't include that index will be replaces with 0 
+```
