@@ -1,25 +1,25 @@
 # Machine Learning Area
-Hi everyone, I am Rustam, these days I feel like I need to brush up on my knowledge of ML & DL, so I decided to build a kind of roadmap for mastering ML from the very beginning. We will cover all the basic theory, then move to the processing for applying the gained knowlendge to create AI products.
 
-> The goal is not learning Machine Learning, the goal is to learn how to build software with ML models. The goal is to become a machine learning problem solver, learn how to apply machine learning solutions, optimize for your own cases and environment, and solve real life problems.
+Rustam-Z🚀 • Find more [here](https://t.me/rz_zokirov_ml)
 
-I have a telegram channel, where I post all interesting stuff about AI. (https://t.me/rz_zokirov_ml)
+> The goal is not to learn machine learning, but to learn how to create software using Machine Learning models. The goal is to solve problems and help society with the help of AI. 
 
 ## Why should you learn Machine Learning?
 I found two good answers on why you should care. Firstly, Machine Learning (ML) is making computers do things that we’ve never made computers do before. If you want to do something new, not just new to you, but to the world, you can do it with ML.
 
 Secondly, if you don’t influence the world, the world will influence you.
 
-### 1% better every day = 3700% better at the end of the year
-<img src="img/learning-is.jpeg" alt=">>> (1+1/100)**365 37.78343433288728" style="width: 100%">
-
-## How to study?
+## How to study? 
+- **First, learn to learn.**
 - https://towardsdatascience.com/thinking-of-self-studying-machine-learning-remind-yourself-of-these-6-things-b55a5f2b6c7d
 - https://elitedatascience.com/learn-machine-learning
 - TensorFlow team Machine Learning roadmap, https://www.tensorflow.org/resources/learn-ml/basics-of-machine-learning
-- Target learning Data Science using Krish Naik playklists, https://www.youtube.com/watch?v=mO8xck5cuTA
+- Target learning Data Science using Krish Naik playlists, https://www.youtube.com/watch?v=mO8xck5cuTA
 
-## Draft Roadmap
+### 1% better every day = 3700% better at the end of the year
+<img src="img/motivation.png" alt=">>> (1+1/100)**365 37.78343433288728">
+
+## Roadmap
 - **Math (Calculus, Linear Algebra, Propability & Statistics)** 
   - [Calculus](https://www.youtube.com/playlist?list=PLmdFyQYShrjd4Qn42rcBeFvF6Qs-b6e-L), *Don't Memorize*
   - [Caclulus](https://youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr), *3Blue1Brown*
@@ -36,7 +36,8 @@ Secondly, if you don’t influence the world, the world will influence you.
     - TensorFlow Developer Specialization, deeplearning.ai, coursera.org
     - "Deep learning with Python", book, second part
     - "Hands-on Machine Learning with Scikit-Learn, Keras & TensorFlow", book
-    - **Advanced**
+    
+        **Advanced**
     - Deep learning MIT press, book
     - Deep Learning Specialization, Andrew Ng, coursera.org
     - TensorFlow Advanced Techniques, coursera.org

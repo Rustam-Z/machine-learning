@@ -320,4 +320,13 @@ A = pd.Series([2, 4, 6], index=[0, 1, 2])
 B = pd.Series([1, 3, 5], index=[1, 2, 3])
 print(A + B)
 print(A.add(B, fill_value=0)) # the set which doesn't include that index will be replaces with 0 
+
+## A.add(B)
++ add()
+- sub(), subtract()
+* xmul(), multiply() 
+/ truediv(), div(), divide()
+// floordiv()
+% mod()
+** pow()
 ```
