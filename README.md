@@ -1,6 +1,6 @@
 # Machine Learning Area
 
-Rustam-Z🚀 • Find more [here](https://t.me/rz_zokirov_ml)
+[Rustam-Z🚀](https://t.me/rz_zokirov) • [Find more here](https://t.me/rz_zokirov_ml)
 
 > The goal is not to learn machine learning, but to learn how to create software using Machine Learning models. The goal is to solve problems and help society with the help of AI. 
 
@@ -8,6 +8,9 @@ Rustam-Z🚀 • Find more [here](https://t.me/rz_zokirov_ml)
 I found two good answers on why you should care. Firstly, Machine Learning (ML) is making computers do things that we’ve never made computers do before. If you want to do something new, not just new to you, but to the world, you can do it with ML.
 
 Secondly, if you don’t influence the world, the world will influence you.
+
+If you focus on results, you will never change. 
+If you focus on change, you will get results.
 
 ## How to study? 
 - **First, learn to learn.**
@@ -48,3 +51,22 @@ Secondly, if you don’t influence the world, the world will influence you.
 
 ## Small steps everyday! 
 Please, consider this repository for contributing too! 
+
+<!-- 
+## Path to FAANG! 
+First, need to gain basic knowledge in Data Science and Machine learning:
+    - Follow my roadmap
+    - Course, practice, books
+    - Kaggle
+
+Then, move to FAANG preperation (#algorithms, #systems_design and #behavior):
+    - Cracking the coding interview, LeetCode
+    - https://github.com/jwasham/coding-interview-university
+
+    - Nodir's advice https://t.me/rz_zokirov_swe/285
+    - Smns advice https://t.me/FaangInterviewChannel/58
+
+    - https://t.me/faang_materials
+    - https://t.me/FaangInterviewChannel
+
+-->
