@@ -33,8 +33,8 @@ If you focus on change, you will get results.
     - "Python Data Science Handbook" (chapters 2, 3, 4)
 - **Machine Learning**
     - "Deep learning with Python", book, only first part
-    - "AI and Machine Learning for Coders", book
     - Machine Learning Course, Andrew Ng, coursera.org
+    - "AI and Machine Learning for Coders", book
 - **Deep Learning**
     - TensorFlow Developer Specialization, deeplearning.ai, coursera.org
     - "Deep learning with Python", book, second part
@@ -47,7 +47,6 @@ If you focus on change, you will get results.
 - **Data Science**
     - "Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython", book
     - "Python Data Science Handbook", book
-    - Big Data
 
 ## Small steps everyday! 
 Please, consider this repository for contributing too! 
@@ -55,7 +54,7 @@ Please, consider this repository for contributing too!
 <!-- 
 ## Path to FAANG! 
 First, need to gain basic knowledge in Data Science and Machine learning:
-    - Follow my roadmap
+    - Follow my roadmap (ML, DL, DS, TF (Hands-on))
     - Course, practice, books
     - Kaggle
 

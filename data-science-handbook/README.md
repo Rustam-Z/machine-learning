@@ -330,3 +330,23 @@ print(A.add(B, fill_value=0)) # the set which doesn't include that index will be
 % mod()
 ** pow()
 ```
+```py
+"""Missing Data in Pandas"""
+vals2 = np.array([1, np.nan, 3, 4])
+np.nansum(vals2), np.nanmin(vals2), np.nanmax(vals2)
+
+# NaN and None in Pandas
+x = pd.Series(range(2), dtype=int)
+x[0] = None # Then it will be represented as NaN in DataFrame
+
+"""Operating on Null Values"""
+isnull() # True / False for each element
+notnull() # opposite of isnull()
+dropna() # Return a filtered version of the data
+fillna()
+
+df.isnull()
+data[data.notnull()]
+data.dropna()
+df.dropna(axis='columns') # df.dropna(axis=1) | how='all', by default how='any'
+```
