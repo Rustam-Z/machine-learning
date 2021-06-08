@@ -30,7 +30,7 @@ If you focus on change, you will get results.
 - **Python**  
     - [My Python learning roadmap](https://github.com/Rustam-Z/learning-area#1-start-learning-python)
     - [NumPy](https://www.w3schools.com/python/numpy/default.asp), [Pandas](https://www.w3schools.com/python/pandas/default.asp), [Matplotlib](https://www.w3schools.com/python/matplotlib_intro.asp) 
-    - "Python Data Science Handbook" (chapters 2, 3, 4)
+    - [10 minutes to Pandas](https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html)
 - **Machine Learning**
     - "Deep learning with Python", book, only first part
     - Machine Learning Course, Andrew Ng, coursera.org
@@ -68,4 +68,6 @@ Then, move to FAANG preperation (#algorithms, #systems_design and #behavior):
     - https://t.me/faang_materials
     - https://t.me/FaangInterviewChannel
 
+
+Хорошая мастер программа и стажировка по нужной теме + хорошая подготовка может принести офер джуниора в амазон.
 -->

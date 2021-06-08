@@ -12,6 +12,7 @@
 - [Andrew Ng Machine Learning Career](https://youtu.be/hkagmGAu74Y)
 
 ### Technical Articles / Videos
+- [Cheat sheat Stanford](https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-machine-learning-tips-and-tricks)
 - [Loss function for neural networks CNN](https://towardsdatascience.com/understanding-different-loss-functions-for-neural-networks-dd1ed0274718)
 - [Backprop in CNN](https://medium.com/@pavisj/convolutions-and-backpropagations-46026a8f5d2c)
 - [Backprop in NN](https://youtu.be/0e0z28wAWfg)

@@ -6,13 +6,18 @@ My notes on **NumPy: ndarray**, **Pandas: DataFrame**, **Matplotlib**, and **Sci
 
 ## Contents
 1. IPython: Beyond Normal Python - *All features of Jupyter Notebook*
-2. Introduction to NumPy: Math operations with NumPy
+2. [Introduction to NumPy: Math operations with NumPy](#CHAPTER-2:-Introduction-to-NumPy)
     - Creating Arrays
     - The Basics of NumPy Arrays
     - Computation on NumPy Arrays
     - Fancy indexing
     - Structured Arrays
-3. Data Manipulation with Pandas
+3. [Data Manipulation with Pandas](#CHAPTER-3:-Data-Manipulation-with-Pandas)
+    - The Pandas Series / DataFrame / Index Objects
+    - Data Selection in Series / DataFrame
+    - Missing Data in Pandas / Operating on NULL values
+    - Combining Datasets: Concat and Append
+    - [GroupBy: Split, Apply, Combine](#GroupBy:-Split,-Apply,-Combine)
 4. Visualization with Matplotlib
 5. Machine Learning
 
@@ -217,8 +222,8 @@ data[data['age'] < 30]['name'] #  array(['Alice', 'Doug'], dtype='<U10')
 
 """Creating Structured Arrays"""
 tp = np.dtype({'names':('name', 'age', 'weight'), 'formats':('U10', 'i4', 'f8')})
-tp =  np.dtype([('name', 'S10'), ('age', 'i4'), ('weight', 'f8')])
-tp =  np.dtype('S10,i4,f8')
+tp = np.dtype([('name', 'S10'), ('age', 'i4'), ('weight', 'f8')])
+tp = np.dtype('S10,i4,f8')
 
 # Then assign in dtype argument:
 X = np.zeros(1, dtype=tp)
@@ -345,8 +350,45 @@ notnull() # opposite of isnull()
 dropna() # Return a filtered version of the data
 fillna()
 
+# Detecting null values
 df.isnull()
 data[data.notnull()]
+
+# Dropping null values
 data.dropna()
-df.dropna(axis='columns') # df.dropna(axis=1) | how='all', by default how='any'
+df.dropna(axis='columns', how='all') # df.dropna(axis=1) | how='all', by default how='any' | thresh=3
+
+# Filling null values
+data.fillna(0)
+data.fillna(method='ffill') # propagate the previous value forward
+data.fillna(method='bfill')
+df.fillna(method='ffill', axis=1) # we can specify an axis along which the fills take place
+
+# NOTE
+df.isnull().any()
+df[df['SMTH'].isnull()].head()
+```
+```py
+"""Combining Datasets: Concat and Append"""
+np.concatenate([x, y]) # with numpy
+pd.concat([x, y]) # with pandas
+pd.concat([x, y], ignore_index=True) # ignoring the index
+df1.append(df2) # same as pd.concat([df1, df2]), NOT good practice
+
+"""Combining Datasets: Merge and Join"""
+df3 = pd.merge(df1, df2) # can use when df1 and df2 have common columns PK = primary key
+# check 02-pandas.ipynb
+```
+### GroupBy: Split, Apply, Combine
+- Split, apply, combine
+- **Functions: aggregate, filter, transform, and apply.**
+- The **split** step involves breaking up and grouping a DataFrame depending on the value of the specified key.
+- The **apply** step involves computing some function, usually an aggregate, transformation, or filtering, within the individual groups.
+- The **combine** step merges the results of these operations into an output array.
+<br><img src="img/groupby.png">
+
+- We need to apply any *Aggregation* funcs from Pandas and NumPy, like `df.groupby('key').sum()`
+
+```py
+
 ```
