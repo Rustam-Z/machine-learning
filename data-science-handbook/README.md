@@ -388,7 +388,58 @@ df3 = pd.merge(df1, df2) # can use when df1 and df2 have common columns PK = pri
 <br><img src="img/groupby.png">
 
 - We need to apply any *Aggregation* funcs from Pandas and NumPy, like `df.groupby('key').sum()`
+- `n_by_state = df.groupby("state")["last_name"].count()` You call `.groupby()` and pass the name of the column you want to group on, which is ``"state"``. Then, you use `["last_name"]` to specify the columns on which you want to perform the actual aggregation.
 
 ```py
+# Column indexing
+# https://realpython.com/pandas-groupby/
+n_by_state = df.groupby("state")["last_name"].count()
+df.groupby(["state", "gender"])["last_name"].count() # for multiple, as_index=False
 
+# Dispatch methods 
+planets.groupby('method')['year'].describe().unstack()
+
+# Aggregation
+df.groupby('key').aggregate(['min', np.median, max])
+df.groupby('key').aggregate({'data1': 'min', 'data2': 'max'}) # even we can specify 
+
+# Filtering
+def filter_func(x):
+    return x['data2'].std() > 4 
+    
+print(df)
+print(df.groupby('key').std())
+print(df.groupby('key').filter(filter_func))
+
+# Transformation
+df.groupby('key').transform(lambda x: x - x.mean())
+
+# The apply() method - we can app;y arbitary function
+def norm_by_data2(x):
+    # x is a DataFrame of group values
+    x['data1'] /= x['data2'].sum() 
+    return x
+print(df); print(df.groupby('key').apply(norm_by_data2))
+```
+```py
+"""High-Performance Pandas: eval() and query()"""
+"""eval()"""
+# Operators
+result1 = -df1 * df2 / (df3 + df4) - df5
+result2 = pd.eval('-df1 * df2 / (df3 + df4) - df5')
+
+# With dataframe
+result1 = (df['A'] + df['B']) / (df['C'] - 1)
+result2 = pd.eval("(df.A + df.B) / (df.C - 1)")
+df.eval('D = (A + B) / C', inplace=True) # We can even perform on DF object
+
+column_mean = df.mean(1)
+result1 = df['A'] + column_mean
+result2 = df.eval('A + @column_mean')
+
+"""query()"""
+result1 = df[(df.A < 0.5) & (df.B < 0.5)]
+result2 = pd.eval('df[(df.A < 0.5) & (df.B < 0.5)]')
+result3 = df.eval('A < 0.5 and B < 0.5') # do not work with DF, so we need query
+result4 = df.query('A < 0.5 and B < 0.5')
 ```

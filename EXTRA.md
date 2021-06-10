@@ -16,6 +16,7 @@
 - [Loss function for neural networks CNN](https://towardsdatascience.com/understanding-different-loss-functions-for-neural-networks-dd1ed0274718)
 - [Backprop in CNN](https://medium.com/@pavisj/convolutions-and-backpropagations-46026a8f5d2c)
 - [Backprop in NN](https://youtu.be/0e0z28wAWfg)
+- [Introduction to Backpropagation and Optimization](https://ai.plainenglish.io/approach-complex-functions-with-backpropagation-how-i-was-applying-to-yandex-c5f68d50f2da)
 
 ### Courses
 - http://introtodeeplearning.com
@@ -35,10 +36,10 @@
     - https://www.quora.com/Can-validation-accuracy-be-higher-than-training-accuracy
 
 ### Resources where you can find the latest publications from leading laboratories
-https://openai.com/blog/tags/research/
-https://deepmind.com/research
-https://www.microsoft.com/en-us/research/research-area/artificial-intelligence
-https://www.research.ibm.com/artificial-intelligence/#publications
-https://ai.stanford.edu
-https://www.csail.mit.edu
-https://ai.google/research/
+- https://openai.com/blog/tags/research/
+- https://deepmind.com/research
+- https://www.microsoft.com/en-us/research/research-area/artificial-intelligence
+- https://www.research.ibm.com/artificial-intelligence/#publications
+- https://ai.stanford.edu
+- https://www.csail.mit.edu
+- https://ai.google/research/
