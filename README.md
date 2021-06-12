@@ -27,6 +27,7 @@ If you focus on change, you will get results.
   - [Calculus](https://www.youtube.com/playlist?list=PLmdFyQYShrjd4Qn42rcBeFvF6Qs-b6e-L), *Don't Memorize*
   - [Caclulus](https://youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr), *3Blue1Brown*
   - [Linear Algebra](https://youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab), *3Blue1Brown*
+  - [Statistics & Probability](https://www.khanacademy.org/math/statistics-probability)
 - **Python**  
     - [My Python learning roadmap](https://github.com/Rustam-Z/learning-area#1-start-learning-python)
     - [NumPy](https://www.w3schools.com/python/numpy/default.asp), [Pandas](https://www.w3schools.com/python/pandas/default.asp), [Matplotlib](https://www.w3schools.com/python/matplotlib_intro.asp) 
@@ -44,6 +45,7 @@ If you focus on change, you will get results.
     - Deep learning MIT press, book
     - Deep Learning Specialization, Andrew Ng, coursera.org
     - TensorFlow Advanced Techniques, coursera.org
+    - [Advanced Machine Learning Specialization](https://www.coursera.org/specializations/aml)
 - **Data Science**
     - "Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython", book
     - "Python Data Science Handbook", book

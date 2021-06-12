@@ -18,7 +18,7 @@ My notes on **NumPy: ndarray**, **Pandas: DataFrame**, **Matplotlib**, and **Sci
     - Missing Data in Pandas / Operating on NULL values
     - Combining Datasets: Concat and Append
     - [GroupBy: Split, Apply, Combine](#GroupBy:-Split,-Apply,-Combine)
-4. Visualization with Matplotlib
+4. [Visualization with Matplotlib](#CHAPTER-4:-Visualization-with-Matplotlib)
 5. Machine Learning
 
 ## CHAPTER 2: Introduction to NumPy
@@ -443,3 +443,7 @@ result2 = pd.eval('df[(df.A < 0.5) & (df.B < 0.5)]')
 result3 = df.eval('A < 0.5 and B < 0.5') # do not work with DF, so we need query
 result4 = df.query('A < 0.5 and B < 0.5')
 ```
+
+## CHAPTER 4: Visualization with Matplotlib
+
+

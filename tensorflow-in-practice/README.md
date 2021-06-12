@@ -8,8 +8,7 @@ We will cover the basics of Keras model building structure, Computer Vision with
 
 ## How to study?
 Go to the [specialization website](https://www.coursera.org/professional-certificates/tensorflow-in-practice), and enroll the courses (you can audit). <br> 
-Course notebooks: https://github.com/lmoroney/dlaicourse <br>
-Course quizzes: https://github.com/SHANK885/Tensorflow-in-Practice-Specialization <br>
+- Course notebooks: https://github.com/lmoroney/dlaicourse 
 
 ## What's next?
 - Projects, projects, projects

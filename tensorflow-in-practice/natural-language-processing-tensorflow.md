@@ -9,7 +9,8 @@
 - Week 4 - [Sequence models and literature](#Sequence-models-and-literature) 
 
 ## Sentiment in text
-- [Week 1 notebook](notebooks/Course_3_Week_1(Tokenizer).ipynb)
+> [Week 1 Notebook](notebooks/Course_3_Week_1(Tokenizer-Sarcasm-Dataset).ipynb)
+
 - How to load in the texts, pre-process it and set up your data so it can be fed to a neural network.
 - https://rishabhmisra.github.io/publications/
 - `Tokenizer` is used to tokenize the sentences, `oov_token=<Token>`can be used to encode unknown words
@@ -18,19 +19,53 @@
 - `texts_to_sequences(sentences)` - the method to encode a list of sentences to use those tokens
     - Output: `[[5, 3, 2, 4], [5, 3, 2, 7], [6, 3, 2, 4], [8, 6, 9, 2, 4, 10, 11]]`
 
+```py
+tokenizer = Tokenizer(oov_token="<OOV>")
+tokenizer.fit_on_texts(sentences)
+word_index = tokenizer.word_index
+sequences = tokenizer.texts_to_sequences(sentences)
+padded = pad_sequences(sequences, padding='post') 
+```
+
 ## Word Embeddings
-- [Week 2 notebook](notebooks/Course_3_Week_2(Model_training).ipynb)
-- [Week 2 Part 2](notebooks/Course_3_Week_2(Subwords).ipynb)
+> [Week 2 Notebook](notebooks/Course_3_Week_2(Model_Training_IMDB_Reviews).ipynb)
+> [Week 2 Part 2](notebooks/Course_3_Week_2(Subwords).ipynb)
+
+<img src="img/word_embeddings.png"><br>
 
 - In the second week, we learn to prepare the data with Tokenizer API, and then teach our model
 - TensorFlow Datasets: https://www.tensorflow.org/datasets
+<img src="img/tf_datasets.png"><br>
 - https://github.com/tensorflow/datasets/tree/master/docs/catalog
-- https://projector.tensorflow.org To visualize the data
-- What is the purpose of the embedding dimension?
-> It is the number of dimensions for the vector representing the word encoding
+- https://projector.tensorflow.org - to visualize the data
+
+- **What is the purpose of the embedding dimension?**
+> It is the number of dimensions for the **vector representing** the word encoding
+
 - When tokenizing a corpus, what does the num_words=n parameter do?
 > It specifies the maximum number of words to be tokenized, and picks the most common ‘n’ words
+
 - NOTE: Sequence becomes much more important when dealing with subwords, but we’re ignoring word positions.
+
+- It must specify 3 arguments, [reference](https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/):
+
+    - **input_dim**: This is the size of the vocabulary in the text data. For example, if your data is integer encoded to values between 0-999, then the size of the vocabulary would be 1000 words. (all words)
+    - **output_dim**: This is the size of the vector space in which words will be embedded. It defines the size of the output vectors from this layer for each word. For example, it could be 32 or 100 or even larger. Test different values for your problem.
+    - **input_length**: This is the length of input sequences, as you would define for any input layer of a Keras model. For example, if all of your input documents are comprised of 100 words, this would be 100. (words in a sentence)
+
+```py
+def plot_graphs(history, string):
+  plt.plot(history.history[string])
+  plt.plot(history.history['val_'+string])
+
+  plt.xlabel("Epochs")
+  plt.ylabel(string)
+  plt.legend([string, 'val_'+string])
+  plt.show()
+  
+plot_graphs(history, "accuracy")
+plot_graphs(history, "loss")
+```
 
 ## Sequence models
 - RNN, LSTM https://www.youtube.com/watch?v=WCUNPb-5EYI
