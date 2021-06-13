@@ -14,7 +14,7 @@
 ## Exploring a Larger Dataset
 > [Notebook](notebooks/Course_2_Part_2_Lesson_2_Notebook.ipynb)
 
-> https://www.kaggle.com/c/dogs-vs-cats 25K pictures of cats and gogs
+> https://www.kaggle.com/c/dogs-vs-cats 25K pictures of cats and dogs
 
 ```python
 # Download ZIP file and extract it with python
