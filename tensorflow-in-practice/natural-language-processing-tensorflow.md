@@ -3,7 +3,7 @@
     - Week 1: How to convert the text into number representation, Tokenizer, fit_on_texts, texts_to_sequences, pad_sequences
     - Week 2: Word Embeddings - Classification problems
     - Week 3: Sequence models - RNN, LSTM, classification problems
-    - Week 4: Sequence models and literature - creating text from scratch
+    - Week 4: Sequence models and literature - text generation
 
 - Week 1 - [Sentiment in text](#Sentiment-in-text)
 - Week 2 - [Word Embeddings](#Word-Embeddings)
