@@ -33,27 +33,23 @@ If you focus on change, you will get results.
     - [NumPy](https://www.w3schools.com/python/numpy/default.asp), [Pandas](https://www.w3schools.com/python/pandas/default.asp), [Matplotlib](https://www.w3schools.com/python/matplotlib_intro.asp) 
     - [10 minutes to Pandas](https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html)
 - **Machine Learning**
-    - "Deep learning with Python", book, only first part
+    - "Deep learning with Python", book, 1st part
     - Machine Learning Course, Andrew Ng, coursera.org
-    - Scikit-Learn
+    - [Scikit-Learn](https://inria.github.io/scikit-learn-mooc/)
 - **Deep Learning** - Start [Kaggle](https://github.com/Rustam-Z/kaggle-problem-solving) from this stage
     - TensorFlow Developer Specialization, deeplearning.ai, coursera.org
     - "AI and Machine Learning for Coders", book
-    - "Deep learning with Python", book, second part
+    - "Deep learning with Python", book, 2nd part
     - "Hands-on Machine Learning with Scikit-Learn, Keras & TensorFlow", book
     - **fast.ai**
-
-        **Advanced**
-    - Deep learning MIT press, book
+    - "Deep learning", MIT press, book
     - Deep Learning Specialization, Andrew Ng, coursera.org
-    - TensorFlow Advanced Techniques, coursera.org
-    - [Advanced Machine Learning Specialization](https://www.coursera.org/specializations/aml)
+    - TensorFlow Advanced Techniques, deeplearning.ai, coursera.org
 - **Data Science**
     - "Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython", book
     - "Python Data Science Handbook", book
 
-## Small steps everyday! 
-Please, consider this repository for contributing too! 
+*Please, consider this repository for contributing too!* 
 
 <!-- 
 ## Path to FAANG! 
