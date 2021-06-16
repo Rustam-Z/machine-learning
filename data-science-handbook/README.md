@@ -445,5 +445,24 @@ result4 = df.query('A < 0.5 and B < 0.5')
 ```
 
 ## CHAPTER 4: Visualization with Matplotlib
+```py
+"""Line"""
+plt.plot(x, np.sin(x), linestyle='-g') # -, --, -., :, -g = solid green
+plt.axis([-1, 11, -1.5, 1.5]) # [xmin, xmax, ymin, ymax]
+plt.title("A Sine Curve")
+plt.xlabel("x")
+plt.ylabel("sin(x)")
 
+# When multiple lines 
+plt.plot(x, np.sin(x), '-g', label='sin(x)')
+plt.plot(x, np.cos(x), ':b', label='cos(x)')
+plt.axis('equal')
+plt.legend()
 
+"""Scatter"""
+plt.scatter(x, y) # marker='o'
+
+"""Histogram"""
+data = np.random.randn(1000)
+plt.hist(data)
+```

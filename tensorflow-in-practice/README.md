@@ -13,6 +13,6 @@ Go to the [specialization website](https://www.coursera.org/professional-certifi
 - Course notebooks: https://github.com/lmoroney/dlaicourse 
 
 ## What's next?
-- Projects, projects, projects
+- Start Kaggle competitions
 - Start reading **Hands-on Machine learning** book
 - **TensorFlow Advanced Techniques**: https://www.coursera.org/specializations/tensorflow-advanced-techniques

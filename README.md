@@ -35,12 +35,14 @@ If you focus on change, you will get results.
 - **Machine Learning**
     - "Deep learning with Python", book, only first part
     - Machine Learning Course, Andrew Ng, coursera.org
-    - "AI and Machine Learning for Coders", book
+    - Scikit-Learn
 - **Deep Learning**
     - TensorFlow Developer Specialization, deeplearning.ai, coursera.org
+    - "AI and Machine Learning for Coders", book
     - "Deep learning with Python", book, second part
     - "Hands-on Machine Learning with Scikit-Learn, Keras & TensorFlow", book
-    
+    - **fast.ai**
+
         **Advanced**
     - Deep learning MIT press, book
     - Deep Learning Specialization, Andrew Ng, coursera.org
