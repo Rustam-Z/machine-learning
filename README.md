@@ -14,10 +14,10 @@ If you focus on change, you will get results.
 
 ## How to study? 
 - **First, learn to learn.**
-- https://towardsdatascience.com/thinking-of-self-studying-machine-learning-remind-yourself-of-these-6-things-b55a5f2b6c7d
-- https://elitedatascience.com/learn-machine-learning
-- TensorFlow team Machine Learning roadmap, https://www.tensorflow.org/resources/learn-ml/basics-of-machine-learning
-- Target learning Data Science using Krish Naik playlists, https://www.youtube.com/watch?v=mO8xck5cuTA
+- [Thinking of Self-Studying Machine Learning? Remind yourself of these 6 things](https://towardsdatascience.com/thinking-of-self-studying-machine-learning-remind-yourself-of-these-6-things-b55a5f2b6c7d)
+- [How to Learn Machine Learning](https://elitedatascience.com/learn-machine-learning)
+- [TensorFlow Resources](https://www.tensorflow.org/resources/learn-ml/basics-of-machine-learning)
+- [Krish Naik Playlists](https://www.youtube.com/watch?v=mO8xck5cuTA)
 
 ### 1% better every day = 3700% better at the end of the year
 <img src="img/motivation.png" alt=">>> (1+1/100)**365 37.78343433288728">
@@ -36,7 +36,7 @@ If you focus on change, you will get results.
     - "Deep learning with Python", book, only first part
     - Machine Learning Course, Andrew Ng, coursera.org
     - Scikit-Learn
-- **Deep Learning**
+- **Deep Learning** - Start [Kaggle](https://github.com/Rustam-Z/kaggle-problem-solving) from this stage
     - TensorFlow Developer Specialization, deeplearning.ai, coursera.org
     - "AI and Machine Learning for Coders", book
     - "Deep learning with Python", book, second part
