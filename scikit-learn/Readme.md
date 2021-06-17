@@ -1,8 +1,9 @@
 # Scikit-Learn
 
 <img src="scikit-learn.png">
+<img src="process.png">
 
-- [freeCodeCamp.org](https://youtu.be/pqNCD_5r0IU)
+- [freeCodeCamp.org](https://youtu.be/0B5eIE_1vpU)
 
 ### How to save / upload model
 ```py
@@ -32,4 +33,4 @@ joblib.dump(model, 'model.sav') # Save the model
 5. Move controid to that mean
 
 - How to select **K**?
-    - Elbow method, K=1 to 20
+    - Elbow method
