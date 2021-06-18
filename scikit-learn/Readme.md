@@ -1,7 +1,9 @@
 # Scikit-Learn
 
-<img src="scikit-learn.png">
-<img src="process.png">
+<img src="img/scikit-learn.png">
+<img src="img/process.png">
+<img src="img/process1.png">
+
 
 - [freeCodeCamp.org](https://youtu.be/0B5eIE_1vpU)
 
