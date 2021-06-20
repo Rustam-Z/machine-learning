@@ -19,7 +19,7 @@ My notes on **NumPy: ndarray**, **Pandas: DataFrame**, **Matplotlib**, and **Sci
     - Combining Datasets: Concat and Append
     - [GroupBy: Split, Apply, Combine](#GroupBy:-Split,-Apply,-Combine)
 4. [Visualization with Matplotlib](#CHAPTER-4:-Visualization-with-Matplotlib)
-5. Machine Learning
+5. [Machine Learning](#Machine-Learning)
 
 ## CHAPTER 2: Introduction to NumPy
 - `axis=0 is column`, `axis=1 is row`
@@ -466,3 +466,21 @@ plt.scatter(x, y) # marker='o'
 data = np.random.randn(1000)
 plt.hist(data)
 ```
+
+## Machine Learning
+- **Classification: Predicting discrete labels**
+    - Some important classification algorithms
+        - Naive Bayes 
+        - Support Vector Machines
+        - Decision Trees and Random Forests
+- **Regression: Predicting continuous labels**
+    - Some important regression algorithms
+        - Linear Regression
+        - Support Vector Machines
+        - Decision Trees and Random Forests
+- **Clustering: Inferring labels on unlabeled data**
+    - k-Means Clustering
+    - Gaussian Mixture Models
+- **Dimensionality reduction: Inferring structure of unlabeled data**
+    - Principal Component Analysis (PCA)
+    - Manifold Learning

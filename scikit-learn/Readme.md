@@ -6,6 +6,7 @@
 
 
 - [freeCodeCamp.org](https://youtu.be/0B5eIE_1vpU)
+- [Notebooks](https://github.com/koaning/calm-notebooks)
 
 ### How to save / upload model
 ```py
