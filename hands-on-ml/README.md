@@ -55,7 +55,7 @@ approach: the best Machine Learning techniques can find a solution. (speech reco
         - Logistic Regression
         - Support Vector Machines (SVMs)
         - Decision Trees and Random Forests
-        - Neural networks2
+        - Neural networks
 
 - **Unsupervised learning** - training data is unlabeled.
     - Tasks: clustering, anomaly detection, visualization & dimensionality reduction. 
@@ -156,3 +156,4 @@ approach: the best Machine Learning techniques can find a solution. (speech reco
 - **Take a Quick Look at the Data Structure**
     - Analyse outputs of `df.info(), df.describe(), df.hist()`
 - **Create a Test Set** - put it aside, and never look at it.
+    - `split = StratifiedShuffleSplit(n_splits=1, test_size=0.2, random_state=42)`
