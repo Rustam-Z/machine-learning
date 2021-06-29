@@ -1,12 +1,12 @@
 # Scikit-Learn
 
+- [freeCodeCamp.org](https://youtu.be/0B5eIE_1vpU)
+- https://inria.github.io/scikit-learn-mooc/
+- https://machinelearningmastery.com/start-here/
+
 <img src="img/scikit-learn.png">
 <img src="img/process.png">
 <img src="img/process1.png">
-
-
-- [freeCodeCamp.org](https://youtu.be/0B5eIE_1vpU)
-- [Notebooks](https://github.com/koaning/calm-notebooks)
 
 ### How to save / upload model
 ```py

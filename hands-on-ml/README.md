@@ -18,7 +18,7 @@ Hello, I am Rustam. Here, you can find my notes on `Hands-on Machine Learning` b
     - Building and training with TensorFlow and Keras
     - Architectures: feedforward for tabular data, CNN for computer vision, RNN and LSTM for sequence processing
     - Encoder / decoder and Transformers for NLP
-    - Autoencoders and GANs for generative learning
+    - Autoencoders and generative Adversarial Network (GANs) for generative learning
     - Techniques for training DNN
     - Reinforcement learning - building agent to play a game
     - Loading and preprocessing large amount of data

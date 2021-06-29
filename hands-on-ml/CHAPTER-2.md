@@ -39,3 +39,12 @@
     median = housing["total_bedrooms"].median()  # option 3
     housing["total_bedrooms"].fillna(median, inplace=True)
     ```
+    ```    
+    Axis 0 will act on all the ROWS in each COLUMN    
+    Axis 1 will act on all the COLUMNS in each ROW
+    ```    
+    ```py
+    df1 = df.select_dtypes(include=[np.number]) # to select numerical attributes
+    df2 = df.select_dtypes(include=['object']) # for categorical attributes
+
+    ```
