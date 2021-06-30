@@ -42,6 +42,9 @@
     ```    
     Axis 0 will act on all the ROWS in each COLUMN    
     Axis 1 will act on all the COLUMNS in each ROW
+
+    axis=0 column
+    axis=1 row
     ```    
     ```py
     df1 = df.select_dtypes(include=[np.number]) # to select numerical attributes

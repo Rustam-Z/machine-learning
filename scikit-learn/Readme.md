@@ -2,6 +2,7 @@
 
 - [freeCodeCamp.org](https://youtu.be/0B5eIE_1vpU)
 - https://inria.github.io/scikit-learn-mooc/
+- https://scikit-learn.org/stable/tutorial/index.html
 - https://machinelearningmastery.com/start-here/
 
 <img src="img/scikit-learn.png">

@@ -2,10 +2,12 @@
 
 [Rustam-Z🚀](https://t.me/rz_zokirov) • [Find more here](https://t.me/rz_zokirov_ml)
 
-> The goal is not to learn machine learning, but to learn how to create software using Machine Learning models. The goal is to solve problems and help society with the help of AI. 
+> 1% better every day = 3700% better at the end of the year
+
+> The goal is to solve problems and help society with the help of AI. 
 
 ## Why should you learn Machine Learning?
-I found two good answers on why you should care. Firstly, Machine Learning (ML) is making computers do things that we’ve never made computers do before. If you want to do something new, not just new to you, but to the world, you can do it with ML.
+I found two good answers on why you should care. Firstly, **Machine Learning (ML)** is making computers do things that we’ve never made computers do before. If you want to do something new, not just new to you, but to the world, you can do it with ML.
 
 Secondly, if you don’t influence the world, the world will influence you.
 
@@ -16,11 +18,6 @@ If you focus on change, you will get results.
 - **First, learn to learn.**
 - [Thinking of Self-Studying Machine Learning? Remind yourself of these 6 things](https://towardsdatascience.com/thinking-of-self-studying-machine-learning-remind-yourself-of-these-6-things-b55a5f2b6c7d)
 - [How to Learn Machine Learning](https://elitedatascience.com/learn-machine-learning)
-- [TensorFlow Resources](https://www.tensorflow.org/resources/learn-ml/basics-of-machine-learning)
-- [Krish Naik Playlists](https://www.youtube.com/watch?v=mO8xck5cuTA)
-
-### 1% better every day = 3700% better at the end of the year
-<img src="img/motivation.png" alt=">>> (1+1/100)**365 37.78343433288728">
 
 ## Roadmap
 - **Math (Calculus, Linear Algebra, Propability & Statistics)** 
@@ -33,13 +30,13 @@ If you focus on change, you will get results.
     - [NumPy](https://www.w3schools.com/python/numpy/default.asp), [Pandas](https://www.w3schools.com/python/pandas/default.asp), [Matplotlib](https://www.w3schools.com/python/matplotlib_intro.asp) 
     - [10 minutes to Pandas](https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html)
 - **Machine Learning**
-    - "Deep learning with Python", book, 1st part
+    - "Deep learning with Python", book, 1<sup>st</sup>  part
     - Machine Learning Course, Andrew Ng, coursera.org
     - [Scikit-Learn](https://inria.github.io/scikit-learn-mooc/)
-- **Deep Learning** - Start [Kaggle](https://github.com/Rustam-Z/kaggle-problem-solving) from this stage
+- **Deep Learning** - Start solving [Kaggle](https://github.com/Rustam-Z/kaggle-problem-solving)
     - TensorFlow Developer Specialization, deeplearning.ai, coursera.org
-    - "AI and Machine Learning for Coders", book
-    - "Deep learning with Python", book, 2nd part
+    - OR "AI and Machine Learning for Coders", book
+    - "Deep learning with Python", book, 2<sup>nd</sup> part
     - "Hands-on Machine Learning with Scikit-Learn, Keras & TensorFlow", book
     - **fast.ai**
     - "Deep learning", MIT press, book
