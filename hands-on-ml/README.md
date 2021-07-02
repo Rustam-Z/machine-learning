@@ -25,13 +25,16 @@ Hello, I am Rustam. Here, you can find my notes on `Hands-on Machine Learning` b
     - Training and deploying at scale
 
 
-## Contents
-- [CHAPTER 1: The Machine Learning Landscape](CHAPTER-1)
+## Important Notes
+- **The Machine Learning Landscape**
     - What is Machine Learning? Why use ML?
     - Types of ML systems
     - Main challenges of ML
     - Testing and validating data
-- [CHAPTER 2: End-to-End Machine Learning Project](CHAPTER-2)
+- **End-to-End Machine Learning Project**
+    - **Appendix 2** `book: page 755`
+    ```
+    Shortlist:
     - Look at the Big Picture
         - Frame the problem
         - Performance measure
@@ -48,3 +51,4 @@ Hello, I am Rustam. Here, you can find my notes on `Hands-on Machine Learning` b
         - Ensemble models
         - Evaluate on test set
     - Launch and monitor
+    ```
