@@ -37,7 +37,7 @@ If you focus on change, you will get results.
     - TensorFlow Developer Specialization, deeplearning.ai, coursera.org
     - OR "AI and Machine Learning for Coders", book
     - "Deep learning with Python", book, 2<sup>nd</sup> part
-    - "Hands-on Machine Learning with Scikit-Learn, Keras & TensorFlow", book
+    - ["Hands-on Machine Learning with Scikit-Learn, Keras & TensorFlow"](https://github.com/ageron/handson-ml2), book
     - **fast.ai**
     - "Deep learning", MIT press, book
     - Deep Learning Specialization, Andrew Ng, coursera.org

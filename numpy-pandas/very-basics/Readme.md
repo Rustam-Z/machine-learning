@@ -210,6 +210,3 @@ plt.xlabel('Days in June')
 plt.ylabel('Number')
 plt.suptitle("COVID-19 in June")
 ```
-
-## Sololearn Certificate
-<img src="https://www.sololearn.com/certificates/course/en/13739122/1161/landscape/png">
