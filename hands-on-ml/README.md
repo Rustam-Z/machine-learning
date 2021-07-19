@@ -52,3 +52,10 @@ Hello, I am Rustam. Here, you can find my notes on `Hands-on Machine Learning` b
         - Evaluate on test set
     - Launch and monitor
     ```
+
+<!-- 
+"hands-on-ml" should include:
+- important tips, notes
+- code snippets which are usefull when starting new projects
+- pipelines, ml models codes
+ -->

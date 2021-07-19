@@ -20,20 +20,24 @@ If you focus on change, you will get results.
 - [How to Learn Machine Learning](https://elitedatascience.com/learn-machine-learning)
 
 ## Roadmap
-- **Math (Calculus, Linear Algebra, Propability & Statistics)** 
+* **Math (Calculus, Linear Algebra, Propability & Statistics)** 
   - [Calculus](https://www.youtube.com/playlist?list=PLmdFyQYShrjd4Qn42rcBeFvF6Qs-b6e-L), *Don't Memorize*
   - [Caclulus](https://youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr), *3Blue1Brown*
   - [Linear Algebra](https://youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab), *3Blue1Brown*
   - [Statistics & Probability](https://www.khanacademy.org/math/statistics-probability)
-- **Python**  
+* **Python**  
     - [My Python learning roadmap](https://github.com/Rustam-Z/learning-area#1-start-learning-python)
     - [NumPy](https://www.w3schools.com/python/numpy/default.asp), [Pandas](https://www.w3schools.com/python/pandas/default.asp), [Matplotlib](https://www.w3schools.com/python/matplotlib_intro.asp) 
     - [10 minutes to Pandas](https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html)
-- **Machine Learning**
+* **Machine Learning**
     - "Deep learning with Python", book, 1<sup>st</sup>  part
     - Machine Learning Course, Andrew Ng, coursera.org
-    - [Scikit-Learn](https://inria.github.io/scikit-learn-mooc/)
-- **Deep Learning** - Start solving [Kaggle](https://github.com/Rustam-Z/kaggle-problem-solving)
+    - **Scikit-Learn**
+        - [freeCodeCamp.org](https://youtu.be/0B5eIE_1vpU)
+        - https://inria.github.io/scikit-learn-mooc/
+        - https://scikit-learn.org/stable/tutorial/index.html
+
+* **Deep Learning** - Start solving [Kaggle](https://github.com/Rustam-Z/kaggle-problem-solving)
     - TensorFlow Developer Specialization, deeplearning.ai, coursera.org
     - OR "AI and Machine Learning for Coders", book
     - "Deep learning with Python", book, 2<sup>nd</sup> part
@@ -42,10 +46,12 @@ If you focus on change, you will get results.
     - "Deep learning", MIT press, book
     - Deep Learning Specialization, Andrew Ng, coursera.org
     - TensorFlow Advanced Techniques, deeplearning.ai, coursera.org
-- **Data Science**
+* **Data Science**
     - "Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython", book
     - "Python Data Science Handbook", book
-    
+* **More**
+    - Applied Machine Learning: https://machinelearningmastery.com/start-here
+
 ## ML Cheatsheets
 * [Machine Learning](https://stanford.edu/~shervine/teaching/cs-229/)
     - [Supervised Learning cheatsheet](https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-supervised-learning)
