@@ -1,4 +1,4 @@
-## what is Data Science?
+## What is Data Science?
 - [What really is Data Science? ](https://youtu.be/xC-c7E5PK0Y)
 - https://telegra.ph/What-REALLY-is-Data-Science-09-21
 
