@@ -29,8 +29,8 @@ End-to-End Machine Learning Project step by step code snippets and notes, sectio
 - Prepare data for ML algorithms
     - [Data cleaning](#Data-cleaning)
     - [Handling text and categorical attributes](#Handling-text-and-categorical-attributes)
-    - Feature Scaling
-    - Transformation Pipelines
+    - [Feature Scaling](#Feature-Scaling)
+    - [Transformation Pipelines](#Transformation-Pipelines)
 - Fine-tune your models and combine them into a great solution
     - Training and evaluation on training set
     - Cross-validation
@@ -116,6 +116,8 @@ df_all['Deck'] = df_all['Cabin'].apply(lambda s: s[0] if pd.notnull(s) else 'M')
 
 ## Prepare data for ML algorithms
 - https://stackoverflow.com/questions/48673402/how-can-i-standardize-only-numeric-variables-in-an-sklearn-pipeline
+- https://scikit-learn.org/stable/modules/preprocessing.html
+
 ### Data Cleaning
 ```py
 housing.dropna(subset=["total_bedrooms"])    # Get rid of the corresponding districts
@@ -135,11 +137,135 @@ housing_tr = pd.DataFrame(X, columns=housing_num.columns,
                           index=housing.index) # new dataframe
 ```
 
-### Handling text and categorical attributes
+### Handling Text and Categorical Attributes
 - [select_dtypes](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.select_dtypes.html)
 ```py
 '''Transforming continuous numerical attributes to categorical'''
 housing["income_cat"] = pd.cut(housing["median_income"], 
                                 bins=[0., 1.5, 3.0, 4.5, 6., np.inf], 
                                 labels=[1, 2, 3, 4, 5])
+```
+```py
+'''Categorical Attributes'''
+from sklearn.preprocessing import OrdinalEncoder
+from sklearn.preprocessing import OneHotEncoder
+
+housing_cat = housing[["ocean_proximity"]]
+
+ordinal_encoder = OrdinalEncoder()
+housing_cat_encoded = ordinal_encoder.fit_transform(housing_cat)
+
+housing_cat_encoded[:10] 
+# array([[0.],
+#    [0.],
+#    [4.],
+#    [1.],
+#    [0.],
+#    [1.],
+#    [0.],
+#    [1.],
+#    [0.],
+#    [0.]])
+
+ordinal_encoder.categories_ # [array(['<1H OCEAN', 'INLAND', 'ISLAND', 'NEAR BAY', 'NEAR OCEAN'], dtype=object)]
+
+cat_encoder = OneHotEncoder(sparse=False)
+housing_cat_1hot = cat_encoder.fit_transform(housing_cat)
+housing_cat_1hot
+# array([[1., 0., 0., 0., 0.],
+#        [1., 0., 0., 0., 0.],
+#        [0., 0., 0., 0., 1.],
+#        ...,
+#        [0., 1., 0., 0., 0.],
+#        [1., 0., 0., 0., 0.],
+#        [0., 0., 0., 1., 0.]])
+```
+### Feature Scaling
+```py
+'''StandardScaler'''
+from sklearn.preprocessing import StandardScaler
+import numpy as np
+
+X_train = np.array([[ 1., -1.,  2.],
+                    [ 2.,  0.,  0.],
+                    [ 0.,  1., -1.]])
+scaler = StandardScaler().fit(X_train)
+
+scaler.mean_
+scaler.scale_
+
+X_scaled = scaler.transform(X_train)
+X_scaled
+```
+```py
+from sklearn.preprocessing import MinMaxScaler
+
+X_train = np.array([[ 1., -1.,  2.],
+                    [ 2.,  0.,  0.],
+                    [ 0.,  1., -1.]])
+
+min_max_scaler = MinMaxScaler()
+X_train_minmax = min_max_scaler.fit_transform(X_train)
+X_train_minmax
+# array([[0.5       , 0.        , 1.        ],
+#        [1.        , 0.5       , 0.33333333],
+#        [0.        , 1.        , 0.        ]])
+
+# For the test data, we just need to use .transform()
+X_test = np.array([[-3., -1.,  4.]])
+X_test_minmax = min_max_scaler.transform(X_test)
+X_test_minmax
+# array([[-1.5       ,  0.        ,  1.66666667]])
+```
+
+### Custom Transformer
+```py
+from sklearn.base import BaseEstimator, TransformerMixin
+
+# column index
+rooms_ix, bedrooms_ix, population_ix, households_ix = 3, 4, 5, 6
+
+class CombinedAttributesAdder(BaseEstimator, TransformerMixin):
+    def __init__(self, add_bedrooms_per_room=True): # no *args or **kargs
+        self.add_bedrooms_per_room = add_bedrooms_per_room
+    def fit(self, X, y=None):
+        return self  # nothing else to do
+    def transform(self, X):
+        rooms_per_household = X[:, rooms_ix] / X[:, households_ix]
+        population_per_household = X[:, population_ix] / X[:, households_ix]
+        if self.add_bedrooms_per_room:
+            bedrooms_per_room = X[:, bedrooms_ix] / X[:, rooms_ix]
+            return np.c_[X, rooms_per_household, population_per_household,
+                         bedrooms_per_room]
+        else:
+            return np.c_[X, rooms_per_household, population_per_household]
+
+attr_adder = CombinedAttributesAdder(add_bedrooms_per_room=False)
+housing_extra_attribs = attr_adder.transform(housing.values)
+```
+
+### Transformation Pipelines
+```py
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler
+from sklearn.compose import ColumnTransformer
+
+num_pipeline = Pipeline([
+        ('imputer', SimpleImputer(strategy="median")),
+        ('attribs_adder', CombinedAttributesAdder()),
+        ('std_scaler', StandardScaler()),
+    ])
+
+# housing_num_tr = num_pipeline.fit_transform(housing_num)
+
+num_attribs = list(housing_num)
+cat_attribs = ["ocean_proximity"]
+
+full_pipeline = ColumnTransformer([
+        ("num", num_pipeline, num_attribs),
+        ("cat", OneHotEncoder(), cat_attribs),
+    ])
+
+housing_prepared = full_pipeline.fit_transform(housing)
+housing_prepared # to get access to the new dataset
 ```
