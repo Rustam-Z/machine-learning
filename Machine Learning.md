@@ -31,12 +31,11 @@ End-to-End Machine Learning Project step by step code snippets and notes, sectio
     - [Handling text and categorical attributes](#Handling-text-and-categorical-attributes)
     - [Feature Scaling](#Feature-Scaling)
     - [Transformation Pipelines](#Transformation-Pipelines)
-- Fine-tune your models and combine them into a great solution
-    - Training and evaluation on training set
-    - Cross-validation
-- Fine-Tune model
-    - Grid Search
-    - Randomized Search
+- [Explore many different models and short-list the best ones](#Select-and-Train-a-Model)
+    - [Cross-Validation](#Cross-Validation)
+- Fine-tune models and combine them into a great solution
+    - [Grid Search](#Grid-Search)
+    - [Randomized Search](#Randomized-Search)
     - Ensemble models
     - Evaluate on test set
 - Launch and monitor
@@ -268,4 +267,79 @@ full_pipeline = ColumnTransformer([
 
 housing_prepared = full_pipeline.fit_transform(housing)
 housing_prepared # to get access to the new dataset
+```
+## Select and Train a Model
+- Before using `.predict()` you have to use `full_pipeline.transform(some_data)`
+
+### Cross-Validation
+```py
+from sklearn.model_selection import cross_val_score
+
+scores = cross_val_score(model, data, labels, scoring="neg_mean_squared_eroor", cv=10)
+rmse_scores = np.sqrt(-scores)
+
+def display_scores(scores):
+    print("Scores:", scores)
+    print("Mean:", scores.mean())
+    print("Standart deviation:", scores.std())
+
+display_scores(rmse_scores)
+```
+```py
+'''Save the model'''
+import joblib
+joblib.dump(my_model, "my_model.pkl") # to save model
+my_model_loaded = joblib.load("my_model.pkl") # to load model
+```
+
+
+## Fine-tune Models
+### Grid Search
+```py
+from sklearn.model_selection import GridSearchCV
+
+param_grid = [
+    # try 12 (3×4) combinations of hyperparameters
+    {'n_estimators': [3, 10, 30], 'max_features': [2, 4, 6, 8]},
+    # then try 6 (2×3) combinations with bootstrap set as False
+    {'bootstrap': [False], 'n_estimators': [3, 10], 'max_features': [2, 3, 4]},
+]
+
+forest_reg = RandomForestRegressor(random_state=42)
+# train across 5 folds, that's a total of (12+6)*5=90 rounds of training 
+grid_search = GridSearchCV(forest_reg, param_grid, cv=5,
+                           scoring='neg_mean_squared_error',
+                           return_train_score=True)
+grid_search.fit(housing_prepared, housing_labels)
+
+grid_search.best_params_ # the best hyperparameters
+grid_search.best_estimator_
+
+# look at the score of each hyperparameter combination tested during the grid search:
+cvres = grid_search.cv_results_
+for mean_score, params in zip(cvres["mean_test_score"], cvres["params"]):
+    print(np.sqrt(-mean_score), params)
+```
+
+### Randomized Search
+```py
+from sklearn.model_selection import RandomizedSearchCV
+from scipy.stats import randint
+
+param_distribs = {
+        'n_estimators': randint(low=1, high=200),
+        'max_features': randint(low=1, high=8),
+    }
+
+forest_reg = RandomForestRegressor(random_state=42)
+rnd_search = RandomizedSearchCV(forest_reg, param_distributions=param_distribs,
+                                n_iter=10, cv=5, scoring='neg_mean_squared_error', random_state=42)
+rnd_search.fit(housing_prepared, housing_labels)
+
+# looking at the scores during training
+cvres = rnd_search.cv_results_
+for mean_score, params in zip(cvres["mean_test_score"], cvres["params"]):
+    print(np.sqrt(-mean_score), params)
+
+feature_importances = grid_search.best_estimator_.feature_importances_
 ```
