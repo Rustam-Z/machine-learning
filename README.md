@@ -54,17 +54,7 @@ If you focus on change, you will get results.
 ## ML Cheatsheets
 * [Cheat Sheets for AI, Neural Networks, Machine Learning, Deep Learning & Big Data](https://becominghuman.ai/cheat-sheets-for-ai-neural-networks-machine-learning-deep-learning-big-data-678c51b4b463) `numpy`, `pandas`, `sklearn`, `ml`, `dl`
 * [Machine Learning](https://stanford.edu/~shervine/teaching/cs-229/)
-    - [Supervised Learning cheatsheet](https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-supervised-learning)
-    - [Unsupervised Learning cheatsheet](https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-unsupervised-learning)
-    - [Deep Learning cheatsheet](https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-deep-learning)
-    - [Machine Learning tips and tricks cheatsheet](https://stanford.edu/~shervine/teaching/cs-229/cheatsheet-machine-learning-tips-and-tricks)
-* [Deep Learning](https://stanford.edu/~shervine/teaching/cs-230/) 
-    - [CNN](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-convolutional-neural-networks)
-    - [RNN](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks)
-    - [Deep Learning Tips and Tricks cheatsheet](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-deep-learning-tips-and-tricks)
-*  [Probabilities and Statistics](https://stanford.edu/~shervine/teaching/cs-229/refresher-probabilities-statistics)
-* [Linear Algebra and Calculus](https://stanford.edu/~shervine/teaching/cs-229/refresher-algebra-calculus)
-
+ 
 *Please, consider this repository for contributing too!* 
 
 <!-- 
