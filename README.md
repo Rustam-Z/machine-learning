@@ -7,6 +7,9 @@
 > The goal is to solve problems and help society with the help of AI. 
 
 ## Why should you learn Machine Learning?
+
+[First of all, understand the difference between AI / Data Science / Machine Learning](https://telegra.ph/AI--Data-Science--Machine-Learning--Deep-Learning--Data-Analysis--Data-Engineering--Big-Data-09-09)
+
 I found two good answers on why you should care. Firstly, **Machine Learning (ML)** is making computers do things that we’ve never made computers do before. If you want to do something new, not just new to you, but to the world, you can do it with ML.
 
 Secondly, if you don’t influence the world, the world will influence you.
