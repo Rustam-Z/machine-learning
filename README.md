@@ -30,44 +30,42 @@ Courses:
 - [Stanford CS221: Artificial Intelligence](https://www.youtube.com/playlist?list=PLoROMvodv4rO1NB9TD4iUZ3qghGEGtqNX)
 - [Stanford CS229: Machine Learning](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU)
 - [Amazon Machine Learning Guide](https://docs.aws.amazon.com/machine-learning/latest/dg/machinelearning-dg.pdf)
+- [Krish Naik's complete ML course](https://www.youtube.com/playlist?list=PLZoTAELRMXVPBTrWtJkn3wWQxZkmTXGwe)
 
 Books:
-- [Machine Learning Yearning](https://github.com/Rustam-Z/deep-learning-notes/blob/main/andrew-ng-ml-book.pdf) Andrew Ng - After finishing this book, you will have a deep understanding of how to set technical direction for a machine learning project.
-- [Machine Learning for Humans](https://everythingcomputerscience.com/books/Machine%20Learning%20for%20Humans.pdf) - All in one, very short explanation of ML
-- [The Hundred-Page Machine Learning Book](https://t.me/progbook2/121) Andriy Burkov
-- [Machine Learning Engineering](https://t.me/progbook2/603) Andriy Burkov
-- [The Mechanics of Machine Learning](https://mlbook.explained.ai/)
+- ["Machine Learning Yearning"](https://github.com/Rustam-Z/deep-learning-notes/blob/main/andrew-ng-ml-book.pdf) Andrew Ng - After finishing this book, you will have a deep understanding of how to set technical direction for a machine learning project.
+- ["Machine Learning for Humans"](https://everythingcomputerscience.com/books/Machine%20Learning%20for%20Humans.pdf) - All in one, very short explanation of ML
+- ["The Hundred-Page Machine Learning Book"](https://t.me/progbook2/121) Andriy Burkov
+- ["Machine Learning Engineering"](https://t.me/progbook2/603) Andriy Burkov
 - "Machine Learning For Absolute Beginners" Oliver Theobald
 - "The Elements Of Statistical Learning: Data Mining, Inference and Prediction"
-- [AI and Machine Learning for Coders](https://t.me/progbook2/593) - Laurence Moroney, deeplearning.ai TensorFlow Developer specialization instructor
-- [Python Machine Learning](https://github.com/rasbt/python-machine-learning-book)
+- ["AI and Machine Learning for Coders"](https://t.me/progbook2/593) - Laurence Moroney, deeplearning.ai TensorFlow Developer specialization instructor
+- ["Python Machine Learning"](https://github.com/rasbt/python-machine-learning-book)
 
 Practice:
+- [The Mechanics of Machine Learning](https://mlbook.explained.ai/)
 - [Applied Machine Learning](https://machinelearningmastery.com/start-here)
-- [Machine Learning Playlist by freeCodeCamp](https://www.youtube.com/playlist?list=PLWKjhJtqVAblStefaz_YOVpDWqcRScc2s)
 - [Practical Machine Learning with Python](https://www.youtube.com/playlist?list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v)
 - **Scikit-Learn**
-    - [freeCodeCamp.org](https://youtu.be/0B5eIE_1vpU)
     - https://inria.github.io/scikit-learn-mooc/
     - https://scikit-learn.org/stable/tutorial/index.html
           
-## Deep Learning
+## Deep Learning, Neural Networks
 Courses:
 - [Deep Learning Specialization, Andrew Ng, coursera.org](https://www.coursera.org/specializations/deep-learning)
 - [CS230: Deep Learning](https://www.youtube.com/playlist?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb) - A class of DL at Stanford by Andrew Ng
-- [Krish Naik's complete DL course](https://www.youtube.com/playlist?list=PLZoTAELRMXVPGU70ZGsckrMdr0FteeRUi) - In case you get stuck and don't understand the concepts try to find the easy explained video in this playlist
-- [Krish Naik's complete ML course](https://www.youtube.com/playlist?list=PLZoTAELRMXVPBTrWtJkn3wWQxZkmTXGwe)
-- **fast.ai**
 - [MIT Deep Learning](http://introtodeeplearning.com/)
+- [Krish Naik's complete DL course](https://www.youtube.com/playlist?list=PLZoTAELRMXVPGU70ZGsckrMdr0FteeRUi) - In case you get stuck and don't understand the concepts try to find the easy explained video in this playlist
 
 Books:
-- [Grokking Deep Learning](https://t.me/progbook2/216)
+- ["Grokking Deep Learning"](https://t.me/progbook2/216)
 - ["Hands-on Machine Learning with Scikit-Learn, Keras & TensorFlow"](https://github.com/ageron/handson-ml2)
-- [Deep Learning with Python](http://faculty.neu.edu.cn/yury/AAI/Textbook/Deep%20Learning%20with%20Python.pdf)
+- ["Deep Learning with Python"](http://faculty.neu.edu.cn/yury/AAI/Textbook/Deep%20Learning%20with%20Python.pdf)
 - "Deep Learning for Coders with fastai and PyTorch"
 - `advanced` "Deep learning", MIT press, "Written by three experts in the field, Deep Learning is the only comprehensive book on the subject."
 
 Extra:
+- [**fast.ai**](https://www.fast.ai/)
 - [My deep learning course notes](https://github.com/Rustam-Z/deep-learning-notes)
 - [Cheat Sheets for AI, Neural Networks, Machine Learning, Deep Learning & Big Data](https://becominghuman.ai/cheat-sheets-for-ai-neural-networks-machine-learning-deep-learning-big-data-678c51b4b463) `numpy`, `pandas`, `sklearn`, `ml`, `dl`
 
