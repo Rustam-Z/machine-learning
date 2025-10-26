@@ -1,4 +1,4 @@
-# Machine Learning Learning Roadmap
+# Machine Learning, Learning Roadmap
 
 **Machine Learning (ML)** is making computers do things that we’ve never made computers do before. If you want to do something new, not just new to you, but to the world, you can do it with ML. If you focus on change, you will get results. If you focus on results, you will never change. 
 
