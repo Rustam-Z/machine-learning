@@ -34,12 +34,12 @@ Courses:
 
 Books:
 - ["Machine Learning Yearning"](https://github.com/Rustam-Z/deep-learning-notes/blob/main/andrew-ng-ml-book.pdf) Andrew Ng - After finishing this book, you will have a deep understanding of how to set technical direction for a machine learning project.
-- ["Machine Learning for Humans"](https://everythingcomputerscience.com/books/Machine%20Learning%20for%20Humans.pdf) - All in one, very short explanation of ML
-- ["The Hundred-Page Machine Learning Book"](https://t.me/progbook2/121) Andriy Burkov
-- ["Machine Learning Engineering"](https://t.me/progbook2/603) Andriy Burkov
+- "Machine Learning for Humans" - All in one, very short explanation of ML
+- "The Hundred-Page Machine Learning Book" Andriy Burkov
+- "Machine Learning Engineering" Andriy Burkov
 - "Machine Learning For Absolute Beginners" Oliver Theobald
 - "The Elements Of Statistical Learning: Data Mining, Inference and Prediction"
-- ["AI and Machine Learning for Coders"](https://t.me/progbook2/593) - Laurence Moroney, deeplearning.ai TensorFlow Developer specialization instructor
+- "AI and Machine Learning for Coders" - Laurence Moroney, deeplearning.ai TensorFlow Developer specialization instructor
 - ["Python Machine Learning"](https://github.com/rasbt/python-machine-learning-book)
 
 Practice:
