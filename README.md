@@ -1,4 +1,4 @@
-# Machine Learning, Learning Roadmap
+# Machine Learning, Deep Learning
 
 **Machine Learning (ML)** is making computers do things that we’ve never made computers do before. If you want to do something new, not just new to you, but to the world, you can do it with ML. If you focus on change, you will get results. If you focus on results, you will never change. 
 
@@ -20,6 +20,8 @@ Books:
 - "Python Data Science Handbook"
       
 ## Machine Learning
+- My notes from Stanford course: https://github.com/Rustam-Z/machine-learning-stanford-notes
+
 Courses:
 - [Understand the difference between AI / Data Science / Machine Learning / Deep Learning](https://telegra.ph/AI--Data-Science--Machine-Learning--Deep-Learning--Data-Analysis--Data-Engineering--Big-Data-09-09)
 - [Google's ML Crash Course](https://developers.google.com/machine-learning/crash-course) - Just for fast recapping
@@ -51,6 +53,8 @@ Practice:
     - https://scikit-learn.org/stable/tutorial/index.html
           
 ## Deep Learning, Neural Networks
+- My notes from Deep Learning course by Andrew Ng: https://github.com/Rustam-Z/deep-learning-notes
+
 Courses:
 - [Deep Learning Specialization, Andrew Ng, coursera.org](https://www.coursera.org/specializations/deep-learning)
 - [CS230: Deep Learning](https://www.youtube.com/playlist?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb) - A class of DL at Stanford by Andrew Ng
