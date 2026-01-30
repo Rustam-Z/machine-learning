@@ -1,5 +1,12 @@
 # Machine Learning & Deep Learning: Learning Roadmap
 
+# Content 
+- [Math (Calculus, Linear Algebra, Propability & Statistics)](#math-calculus-linear-algebra-propability--statistics))
+- [Python for Data Science](#python-for-data-science)
+- [Machine Learning](#machine-learning)
+- [Neural Networks and Deep Learning](#neural-networks-and-deep-learning)
+  
+# TL;DR about ML
 ### What is Machine Learning?
 - Machine learning (ML) is field of study that gives computers the ability to learn without being explicitly programmed. Machine Learning is making computers do things that we’ve never made computers do before.
 - A computer program is said to learn from *experience E* with respect to some *task T* and some *performance measure P*, if its performance on T, as measured by P, improves with experience E.
@@ -13,8 +20,10 @@
 
 ### Types of ML Systems
 - Whether or not they are trained with human supervision `supervised, unsupervised, semisupervised, and Reinforcement Learning`
-- Whether or not they can learn incrementally on the fly `online vs batch learning`
-- Whether they work by simply comparing new data points to known data points, or instead detect patterns in the training data and build a predictive model, much like scientists do `instance-based vs model-based learning`
+- Whether or not they can learn incrementally on the fly `online vs batch learning`.
+    - **Batch learning** - or *offline learning*, when you have new type of data, you need to retrain over whole dataset every time. **Online learning** - you train the system incrementally on a new data or mini-batch of data. You must set *learning rate* parameter, if you set hugh rate, then your system rapidly adapt to new data, but it will tend to forget the old data. A big challenge if bad data is fed to the system, the system’s performance will gradually decline. `TIP!` Monitor your latest input data using an anomaly detection algorithm.
+- Whether they work by simply comparing new data points to known data points, or instead detect patterns in the training data and build a predictive model, much like scientists do `instance-based vs model-based learning`. 
+    - **Instance-based learning** - the system learns the examples by heart, then generalizes to new cases by comparing them to the learned examples using a *similarity measure*. **Model-based learning** - build the model, then use it to make *predictions*.
 - **Supervised learning** - training data with labels (expected outputs). 
     - Tasks: classification, regression (univariate / multivariate). 
     - Class / sample / label / feature (predictors: age, brand, ...) / attribute
@@ -28,14 +37,6 @@
 - **Semisupervised learning** - a lot of unlabeled data and a little bit of labeled data. 
     - Example: like in Google photos, it recongnizes same person in many pictures. We need supervised part because we need to seperate similar clusters. (like similar people)
 - **Reinforcement Learning** - *agent* can observe environment, and perform some actions, and get *rewards* and *penalties*. Then it must teach itself the best strategy (*policy*) to get max reward. A policy defines what action the agent should choose when it is in a given situation.
-<br><img src="img/reinforcement-learning.png" width=450px center>
-- **Batch learning** - or *offline learning*, when you have new type of data, you need to retrain over whole dataset every time.
-- **Online learning** - you train the system incrementally on a new data or mini-batch of data. 
-    - You must set *learning rate* parameter, if you set hugh rate, then your system rapidly adapt to new data, but it will tend to forget the old data. 
-    - A big challenge if bad data is fed to the system, the system’s performance will gradually decline. 
-    - `TIP!` Monitor your latest input data using an anomaly detection algorithm.
-- **Instance-based learning** - the system learns the examples by heart, then generalizes to new cases by comparing them to the learned examples using a *similarity measure*.
-- **Model-based learning** - build the model, then use it to make *predictions*.
 
 # Math (Calculus, Linear Algebra, Propability & Statistics)
 - [Calculus](https://www.youtube.com/playlist?list=PLmdFyQYShrjd4Qn42rcBeFvF6Qs-b6e-L), *Don't Memorize*
