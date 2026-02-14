@@ -8,38 +8,6 @@
 - [Agentic AI](#agentic-ai)
 - [General](#general-notes)
 - [Research](#research)
-  
-# TL;DR about ML
-### What is Machine Learning?
-- Machine learning (ML) is field of study that gives computers the ability to learn without being explicitly programmed. Machine Learning is making computers do things that we’ve never made computers do before.
-- A computer program is said to learn from *experience E* with respect to some *task T* and some *performance measure P*, if its performance on T, as measured by P, improves with experience E.
-- **Example:** T = flag spam for new emails, E = the training data, P = accuracy, the ratio of correctly classified emails.
-
-### Why use ML?
-- Problems for which existing solutions require a lot of hand-tuning or long lists of rules: one Machine Learning algorithm can often simplify code and perform better. (spam classifier)
-- Complex problems for which there is no good solution at all using a traditional approach: the best Machine Learning techniques can find a solution. (speech recognition)
-- Fluctuating environments: a Machine Learning system can adapt to new data.
-- Getting insights about complex problems and large amounts of data. (data mining)
-
-### Types of ML Systems
-- Whether or not they are trained with human supervision `supervised, unsupervised, semisupervised, and Reinforcement Learning`
-- Whether or not they can learn incrementally on the fly `online vs batch learning`.
-    - **Batch learning** - or *offline learning*, when you have new type of data, you need to retrain over whole dataset every time. **Online learning** - you train the system incrementally on a new data or mini-batch of data. You must set *learning rate* parameter, if you set hugh rate, then your system rapidly adapt to new data, but it will tend to forget the old data. A big challenge if bad data is fed to the system, the system’s performance will gradually decline. `TIP!` Monitor your latest input data using an anomaly detection algorithm.
-- Whether they work by simply comparing new data points to known data points, or instead detect patterns in the training data and build a predictive model, much like scientists do `instance-based vs model-based learning`. 
-    - **Instance-based learning** - the system learns the examples by heart, then generalizes to new cases by comparing them to the learned examples using a *similarity measure*. **Model-based learning** - build the model, then use it to make *predictions*.
-- **Supervised learning** - training data with labels (expected outputs). 
-    - Tasks: classification, regression (univariate / multivariate). 
-    - Class / sample / label / feature (predictors: age, brand, ...) / attribute
-    - **Algorithms**: k-Nearest Neighbors, Linear Regression, Logistic Regression, Support Vector Machines (SVMs), Decision Trees and Random Forests, Neural networks
-- **Unsupervised learning** - training data is unlabeled.
-    - Tasks: clustering, anomaly detection, visualization & dimensionality reduction. 
-    - Clustering (find similar visitors): K-Means, DBSCAN, Hierarchical Cluster Analysis (HCA)
-    - Anomaly detection & novelty detection (detect unusual things): One-class SVM, Isolation Forest
-    - `TIP!` Use dimensionality reduction algo before feeding to supervised learning algorithm.
-    - `TIP!` Automatically removing outliers from a dataset before feeding it to another learning algorithm.
-- **Semisupervised learning** - a lot of unlabeled data and a little bit of labeled data. 
-    - Example: like in Google photos, it recongnizes same person in many pictures. We need supervised part because we need to seperate similar clusters. (like similar people)
-- **Reinforcement Learning** - *agent* can observe environment, and perform some actions, and get *rewards* and *penalties*. Then it must teach itself the best strategy (*policy*) to get max reward. A policy defines what action the agent should choose when it is in a given situation.
 
 # Math (Calculus, Linear Algebra, Propability & Statistics)
 - [TL;DR Math for Machine Learning](https://www.youtube.com/playlist?list=PLD80i8An1OEGZ2tYimemzwC3xqkU0jKUg)
@@ -61,6 +29,32 @@ Books:
 # Machine Learning
 My notes from Stanford course: https://github.com/Rustam-Z/machine-learning-stanford-notes
 
+### What is Machine Learning?
+- Machine learning (ML) is field of study that gives computers the ability to learn without being explicitly programmed. Machine Learning is making computers do things that we’ve never made computers do before.
+- A computer program is said to learn from *experience E* with respect to some *task T* and some *performance measure P*, if its performance on T, as measured by P, improves with experience E.
+
+### Why use ML?
+- Problems for which existing solutions require a lot of hand-tuning or long lists of rules: one Machine Learning algorithm can often simplify code and perform better (eg. spam classifier)
+- Complex problems for which there is no good solution at all using a traditional approach: the best Machine Learning techniques can find a solution (eg. speech recognition)
+- Fluctuating environments: a Machine Learning system can adapt to new data.
+- Getting insights about complex problems and large amounts of data (eg. data mining)
+
+### Types of ML Systems:
+- Whether or not they are trained with human supervision `supervised, unsupervised, semisupervised, and Reinforcement Learning`
+  - **Supervised learning** - training data with labels (expected outputs). 
+      - Tasks: classification, regression (univariate / multivariate). 
+      - Class / sample / label / feature (predictors: age, brand, ...) / attribute
+      - **Algorithms**: k-Nearest Neighbors, Linear Regression, Logistic Regression, Support Vector Machines (SVMs), Decision Trees and Random Forests, Neural networks
+  - **Unsupervised learning** - training data is unlabeled.
+      - Tasks: clustering, anomaly detection, visualization & dimensionality reduction. 
+      - Clustering (find similar visitors): K-Means, DBSCAN, Hierarchical Cluster Analysis (HCA)
+      - Anomaly detection & novelty detection (detect unusual things): One-class SVM, Isolation Forest
+      - `TIP!` Use dimensionality reduction algo before feeding to supervised learning algorithm.
+      - `TIP!` Automatically removing outliers from a dataset before feeding it to another learning algorithm.
+  - **Semisupervised learning** - a lot of unlabeled data and a little bit of labeled data. 
+      - Example: like in Google photos, it recongnizes same person in many pictures. We need supervised part because we need to seperate similar clusters. (like similar people)
+  - **Reinforcement Learning** - *agent* can observe environment, and perform some actions, and get *rewards* and *penalties*. Then it must teach itself the best strategy (*policy*) to get max reward. A policy defines what action the agent should choose when it is in a given situation.
+
 Courses:
 - *[Machine Learning Course, Andrew Ng, coursera.org](https://www.coursera.org/specializations/machine-learning-introduction)
   - [Machine Learning Stanford Cheatsheet](https://stanford.edu/~shervine/teaching/cs-229/)
@@ -75,10 +69,10 @@ Courses:
 
 Books:
 - *"Machine Learning For Absolute Beginners" Oliver Theobald
-- *"Machine Learning for Humans" - All in one, very short explanation of ML
+- *"Machine Learning for Humans" - all in one, very short explanation of ML
 - *"The Hundred-Page Machine Learning Book" Andriy Burkov
 - *“Deep Learning with Python” - first chapters 
-- *["Hands-on Machine Learning with Scikit-Learn, Keras & TensorFlow"](https://github.com/ageron/handson-ml2) - first chapters
+- ***["Hands-on Machine Learning with Scikit-Learn, Keras & TensorFlow"](https://github.com/ageron/handson-ml2) - first chapters
 - "Machine Learning Engineering" Andriy Burkov
 - "The Elements Of Statistical Learning: Data Mining, Inference and Prediction"
 - "AI and Machine Learning for Coders" - Laurence Moroney, deeplearning.ai TensorFlow Developer specialization instructor
