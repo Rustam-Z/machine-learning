@@ -117,6 +117,14 @@ Extra:
 
 # Agentic AI
 
+At the heart of agentic AI are autonomous agents that can:
+- Perceive: Interpret input from the environment.
+- Plan: Generate strategies to achieve goals.
+- Act: Execute actions and interact with the world.
+- Learn: Improve decisions based on feedback.
+
+Start with [Intro to LLM by Andrej Karpathy](https://www.youtube.com/playlist?list=PLAqhIrjkxbuW9U8-vZ_s_cjKPT_FqRStI) course.
+
 To read:
 - [The Roadmap for Mastering Agentic AI in 2026](https://machinelearningmastery.com/the-roadmap-for-mastering-agentic-ai-in-2026/?ref=dailydev#)
 - https://modelcontextprotocol.io
