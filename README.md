@@ -137,9 +137,11 @@ To watch:
 - https://www.youtube.com/@umarjamilai/videos
 
 # General notes
+- https://roadmap.sh/ai-engineer
+- https://roadmap.sh/ai-agents
+- https://roadmap.sh/prompt-engineering
 - https://huggingface.co/learn
 - https://www.kaggle.com/learn
-- https://roadmap.sh/ai-engineer
 - https://machinelearningmastery.com/start-here
 - https://towardsdatascience.com
 - https://www.deeplearning.ai
