@@ -1,4 +1,4 @@
-# Machine Learning & Deep Learning: Learning Roadmap
+# Machine Learning & Deep Learning & Agentic AI: Roadmap
 
 # Content 
 - [Math (Calculus, Linear Algebra, Propability & Statistics)](#math-calculus-linear-algebra-propability--statistics))
