@@ -139,6 +139,7 @@ To watch:
 # General notes
 - https://huggingface.co/learn
 - https://www.kaggle.com/learn
+- https://roadmap.sh/ai-engineer
 - https://machinelearningmastery.com/start-here
 - https://towardsdatascience.com
 - https://www.deeplearning.ai
