@@ -54,7 +54,7 @@ Books:
 - "Python Data Science Handbook"
       
 # Machine Learning
-- My notes from Stanford course: https://github.com/Rustam-Z/machine-learning-stanford-notes
+My notes from Stanford course: https://github.com/Rustam-Z/machine-learning-stanford-notes
 
 Courses:
 - [Google's ML Crash Course](https://developers.google.com/machine-learning/crash-course) - Just for fast recapping
@@ -87,14 +87,17 @@ Practice:
     - https://scikit-learn.org/stable/tutorial/index.html
           
 # Neural Networks and Deep Learning 
-- My notes from Deep Learning course by Andrew Ng: https://github.com/Rustam-Z/deep-learning-notes
+My notes from Deep Learning course by Andrew Ng: https://github.com/Rustam-Z/deep-learning-notes
 
 Courses:
 - [Deep Learning Specialization, Andrew Ng, coursera.org](https://www.coursera.org/specializations/deep-learning)
 - [CS230: Deep Learning](https://www.youtube.com/playlist?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb) - A class of DL at Stanford by Andrew Ng
 - [MIT Deep Learning](http://introtodeeplearning.com/)
 - [Krish Naik's complete DL course](https://www.youtube.com/playlist?list=PLZoTAELRMXVPGU70ZGsckrMdr0FteeRUi) - In case you get stuck and don't understand the concepts try to find the easy explained video in this playlist
-
+- https://www.deeplearning.ai/
+- Andrej Karpathy YouTube videos
+- Stanford and MIT free courses
+  
 Books:
 - ["Grokking Deep Learning"](https://t.me/progbook2/216)
 - ["Hands-on Machine Learning with Scikit-Learn, Keras & TensorFlow"](https://github.com/ageron/handson-ml2)
@@ -106,6 +109,11 @@ Extra:
 - [**fast.ai**](https://www.fast.ai/)
 - [My deep learning course notes](https://github.com/Rustam-Z/deep-learning-notes)
 - [Cheat Sheets for AI, Neural Networks, Machine Learning, Deep Learning & Big Data](https://becominghuman.ai/cheat-sheets-for-ai-neural-networks-machine-learning-deep-learning-big-data-678c51b4b463) `numpy`, `pandas`, `sklearn`, `ml`, `dl`
+
+# Blogs
+- https://machinelearningmastery.com/start-here/
+- https://towardsdatascience.com/
+- https://www.deeplearning.ai/
 
 # Research
 - [OpenAI](https://openai.com/blog/tags/research/)
