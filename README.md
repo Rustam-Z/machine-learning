@@ -1,7 +1,7 @@
 # Machine Learning & Deep Learning & Agentic AI: Roadmap
 
 # Content 
-- [Math (Calculus, Linear Algebra, Propability & Statistics)](#math-calculus-linear-algebra-propability--statistics))
+- [Math (Calculus, Linear Algebra, Propability & Statistics)](#math-calculus-linear-algebra-propability--statistics)
 - [Python for Data Science](#python-for-data-science)
 - [Machine Learning](#machine-learning)
 - [Neural Networks and Deep Learning](#neural-networks-and-deep-learning)
