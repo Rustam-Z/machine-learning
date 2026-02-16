@@ -140,6 +140,7 @@ To watch:
 - https://roadmap.sh/ai-engineer
 - https://roadmap.sh/ai-agents
 - https://roadmap.sh/prompt-engineering
+- https://www.anthropic.com/learn, https://www.anthropic.com/engineering
 - https://huggingface.co/learn
 - https://www.kaggle.com/learn
 - https://machinelearningmastery.com/start-here
