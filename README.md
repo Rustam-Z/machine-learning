@@ -80,7 +80,7 @@ Books:
 - *["Machine Learning Yearning"](https://github.com/Rustam-Z/deep-learning-notes/blob/main/andrew-ng-ml-book.pdf) Andrew Ng - After finishing this book, you will have a deep understanding of how to set technical direction for a machine learning project.
 
 Practice:
-- *[Applied Machine Learning](https://machinelearningmastery.com/start-here)
+- *[Applied Machine Learning machinelearningmastery.com](https://machinelearningmastery.com/start-here)
 - [The Mechanics of Machine Learning](https://mlbook.explained.ai/)
 - [Practical Machine Learning with Python](https://www.youtube.com/playlist?list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v)
 - **Scikit-Learn**
@@ -111,39 +111,73 @@ Extra:
 
 # Agentic AI
 
+🔗 Watch this https://youtu.be/oP6DS_x5K0Y?si=pTzcxmaBR2yIqebC
+ 
+My TL;DR about agents:
+
 At the heart of agentic AI are autonomous agents that can:
-- Perceive: Interpret input from the environment.
-- Plan: Generate strategies to achieve goals.
-- Act: Execute actions and interact with the world.
-- Learn: Improve decisions based on feedback.
+1. Perceive: Interpret input from the environment.
+2. Plan: Generate strategies to achieve goals.
+3. Act: Execute actions and interact with the world.
+4. Learn: Improve decisions based on feedback.
 
-Start with [Intro to LLM by Andrej Karpathy](https://www.youtube.com/playlist?list=PLAqhIrjkxbuW9U8-vZ_s_cjKPT_FqRStI) course.
+Basically, AI agent wraps LLM with a few components:
+1. Tools - to act, external capabilities to perform some action other than just generating some text (eg. web search, call APIs, run code in a sandbox, send email), mostly MCP tools. Tool = brain.
+2. Memory - to remember things, long term memory, because agent cannot remember everything in 1 context window (context window = short term memory)
+3. *Reasoning and planning loop - to get the task done, turns LLM into agent with continuous cycle, agent breaks big task into small sub-tasks (simulating thinking system #2 from "Thinking fast and slow"). The loop of "reAct": think → act → observe → repeat.
+4. Perception - the ability to see and hear environment by monitoring chat/database/website.
 
-To read:
-- [The Roadmap for Mastering Agentic AI in 2026](https://machinelearningmastery.com/the-roadmap-for-mastering-agentic-ai-in-2026/?ref=dailydev#)
-- https://modelcontextprotocol.io
-- https://code.claude.com/docs
-- https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview
-- https://agentskills.io/integrate-skills
-- https://geminicli.com/docs
-- https://geminicli.com/docs/cli/skills
-- https://google.github.io/adk-docs
+AGENT = LLM + Planning + Memory + Tools
 
-To watch:
+Remember: the most important component is reasoning loop 🔥 which is a continuous loop of thinking and acting. 
+
+Learn about LLM:
+- Start with [Intro to LLM by Andrej Karpathy](https://www.youtube.com/playlist?list=PLAqhIrjkxbuW9U8-vZ_s_cjKPT_FqRStI) course.
 - [Intro to LLM by Andrej Karpathy](https://www.youtube.com/playlist?list=PLAqhIrjkxbuW9U8-vZ_s_cjKPT_FqRStI)
 - [Stanford LLM course](https://www.youtube.com/playlist?list=PLoROMvodv4rOCXd21gf0CF4xr35yINeOy)
-- https://www.youtube.com/@aiexplained-official/videos
-- https://www.youtube.com/@ShawhinTalebi/videos
 - https://www.youtube.com/@umarjamilai/videos
 
-# General notes
+Learn about Generative AI:
+- Beginner: Introduction to Generative AI https://www.skills.google/paths/118
+- Advanced: Generative AI for Developers https://www.skills.google/paths/183
+
+Must read:
+- MCP https://modelcontextprotocol.io
+- Agents
+  - Gemini CLI https://geminicli.com/docs/
+  - Claude Code https://platform.claude.com/docs/en/home and https://code.claude.com/docs
+- Agent skills
+  - https://agentskills.io
+  - https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview
+  - https://geminicli.com/docs/cli/skills
+  - How to build own skills? https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf?hsLang=en
+
+How to build own agents?
+- Agent development kit: https://google.github.io/adk-docs/ - try to build own agents.
+- Agent SKD by claude: https://platform.claude.com/docs/en/agent-sdk/overview
+- https://docs.langchain.com/
+
+Learn how to build MCP and agents:
+- https://huggingface.co/learn/agents-course/
+- https://huggingface.co/learn/mcp-course/
+- https://anthropic.skilljar.com/introduction-to-model-context-protocol
+- https://anthropic.skilljar.com/model-context-protocol-advanced-topics
+- Introduction to Agents and Google’s Agent Ecosystem https://www.skills.google/paths/3546
+- Fundamentals of Agent Development Kit (ADK) https://www.skills.google/paths/3473
+- Develop Agents with Agent Development Kit (ADK) https://www.skills.google/paths/3545
+
+Deep dive with roadmap:
+- [The Roadmap for Mastering Agentic AI in 2026](https://machinelearningmastery.com/the-roadmap-for-mastering-agentic-ai-in-2026/?ref=dailydev#)
 - https://roadmap.sh/ai-engineer
 - https://roadmap.sh/ai-agents
 - https://roadmap.sh/prompt-engineering
-- https://www.anthropic.com/learn, https://www.anthropic.com/engineering
+
+More resources:
+- https://www.youtube.com/@aiexplained-official/videos
+- https://www.youtube.com/@ShawhinTalebi/videos
 - https://huggingface.co/learn
 - https://www.kaggle.com/learn
-- https://machinelearningmastery.com/start-here
+- https://www.anthropic.com/engineering
 - https://towardsdatascience.com
 - https://www.deeplearning.ai
 - https://www.fast.ai
