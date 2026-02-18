@@ -131,6 +131,9 @@ AGENT = LLM + Planning + Memory + Tools
 
 Remember: the most important component is reasoning loop 🔥 which is a continuous loop of thinking and acting. 
 
+Books:
+- "AI Engineering"
+
 Learn about LLM:
 - Start with [Intro to LLM by Andrej Karpathy](https://www.youtube.com/playlist?list=PLAqhIrjkxbuW9U8-vZ_s_cjKPT_FqRStI) course.
 - [Intro to LLM by Andrej Karpathy](https://www.youtube.com/playlist?list=PLAqhIrjkxbuW9U8-vZ_s_cjKPT_FqRStI)
@@ -174,7 +177,6 @@ Deep dive with roadmap:
 
 More resources:
 - https://www.youtube.com/@aiexplained-official/videos
-- https://www.youtube.com/@ShawhinTalebi/videos
 - https://huggingface.co/learn
 - https://www.kaggle.com/learn
 - https://www.anthropic.com/engineering
