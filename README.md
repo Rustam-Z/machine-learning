@@ -29,31 +29,9 @@ Books:
 # Machine Learning
 My notes from Stanford course: https://github.com/Rustam-Z/machine-learning-stanford-notes
 
-### What is Machine Learning?
+What is Machine Learning?
 - Machine learning (ML) is field of study that gives computers the ability to learn without being explicitly programmed. Machine Learning is making computers do things that we’ve never made computers do before.
 - A computer program is said to learn from *experience E* with respect to some *task T* and some *performance measure P*, if its performance on T, as measured by P, improves with experience E.
-
-### Why use ML?
-- Problems for which existing solutions require a lot of hand-tuning or long lists of rules: one Machine Learning algorithm can often simplify code and perform better (eg. spam classifier)
-- Complex problems for which there is no good solution at all using a traditional approach: the best Machine Learning techniques can find a solution (eg. speech recognition)
-- Fluctuating environments: a Machine Learning system can adapt to new data.
-- Getting insights about complex problems and large amounts of data (eg. data mining)
-
-### Types of ML Systems:
-- Whether or not they are trained with human supervision `supervised, unsupervised, semisupervised, and Reinforcement Learning`
-  - **Supervised learning** - training data with labels (expected outputs). 
-      - Tasks: classification, regression (univariate / multivariate). 
-      - Class / sample / label / feature (predictors: age, brand, ...) / attribute
-      - **Algorithms**: k-Nearest Neighbors, Linear Regression, Logistic Regression, Support Vector Machines (SVMs), Decision Trees and Random Forests, Neural networks
-  - **Unsupervised learning** - training data is unlabeled.
-      - Tasks: clustering, anomaly detection, visualization & dimensionality reduction. 
-      - Clustering (find similar visitors): K-Means, DBSCAN, Hierarchical Cluster Analysis (HCA)
-      - Anomaly detection & novelty detection (detect unusual things): One-class SVM, Isolation Forest
-      - `TIP!` Use dimensionality reduction algo before feeding to supervised learning algorithm.
-      - `TIP!` Automatically removing outliers from a dataset before feeding it to another learning algorithm.
-  - **Semisupervised learning** - a lot of unlabeled data and a little bit of labeled data. 
-      - Example: like in Google photos, it recongnizes same person in many pictures. We need supervised part because we need to seperate similar clusters. (like similar people)
-  - **Reinforcement Learning** - *agent* can observe environment, and perform some actions, and get *rewards* and *penalties*. Then it must teach itself the best strategy (*policy*) to get max reward. A policy defines what action the agent should choose when it is in a given situation.
 
 Courses:
 - *[Machine Learning Course, Andrew Ng, coursera.org](https://www.coursera.org/specializations/machine-learning-introduction)
@@ -110,8 +88,6 @@ Extra:
 - [Cheat Sheets for AI, Neural Networks, Machine Learning, Deep Learning & Big Data](https://becominghuman.ai/cheat-sheets-for-ai-neural-networks-machine-learning-deep-learning-big-data-678c51b4b463) `numpy`, `pandas`, `sklearn`, `ml`, `dl`
 
 # Agentic AI
-
-🔗 Watch this https://youtu.be/oP6DS_x5K0Y?si=pTzcxmaBR2yIqebC
  
 My TL;DR about agents:
 
@@ -121,30 +97,28 @@ At the heart of agentic AI are autonomous agents that can:
 3. Act: Execute actions and interact with the world.
 4. Learn: Improve decisions based on feedback.
 
-Basically, AI agent wraps LLM with a few components:
+Basically, AI agent wraps LLM with a few components (watch this https://youtu.be/oP6DS_x5K0Y?si=pTzcxmaBR2yIqebC)
 1. Tools - to act, external capabilities to perform some action other than just generating some text (eg. web search, call APIs, run code in a sandbox, send email), mostly MCP tools. Tool = brain.
 2. Memory - to remember things, long term memory, because agent cannot remember everything in 1 context window (context window = short term memory)
 3. *Reasoning and planning loop - to get the task done, turns LLM into agent with continuous cycle, agent breaks big task into small sub-tasks (simulating thinking system #2 from "Thinking fast and slow"). The loop of "reAct": think → act → observe → repeat.
 4. Perception - the ability to see and hear environment by monitoring chat/database/website.
 
-AGENT = LLM + Planning + Memory + Tools
-
-Remember: the most important component is reasoning loop 🔥 which is a continuous loop of thinking and acting. 
+AGENT = LLM + Planning + Memory + Tools. Remember: the most important component is reasoning loop 🔥 which is a continuous loop of thinking and acting. 
 
 Books:
 - "AI Engineering"
-
+  
 Learn about LLM:
 - Start with [Intro to LLM by Andrej Karpathy](https://www.youtube.com/playlist?list=PLAqhIrjkxbuW9U8-vZ_s_cjKPT_FqRStI) course.
 - [Intro to LLM by Andrej Karpathy](https://www.youtube.com/playlist?list=PLAqhIrjkxbuW9U8-vZ_s_cjKPT_FqRStI)
 - [Stanford LLM course](https://www.youtube.com/playlist?list=PLoROMvodv4rOCXd21gf0CF4xr35yINeOy)
 - https://www.youtube.com/@umarjamilai/videos
-
+  
 Learn about Generative AI:
 - Beginner: Introduction to Generative AI https://www.skills.google/paths/118
 - Advanced: Generative AI for Developers https://www.skills.google/paths/183
 
-Must read:
+Must read about agents:
 - MCP https://modelcontextprotocol.io
 - Agents
   - Gemini CLI https://geminicli.com/docs/
@@ -155,7 +129,7 @@ Must read:
   - https://geminicli.com/docs/cli/skills
   - How to build own skills? https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf?hsLang=en
 
-How to build own agents?
+Tools to build own agents:
 - Agent development kit: https://google.github.io/adk-docs/ - try to build own agents.
 - Agent SKD by claude: https://platform.claude.com/docs/en/agent-sdk/overview
 - https://docs.langchain.com/
